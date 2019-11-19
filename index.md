@@ -1,3 +1,10 @@
+Papers
+
+https://alfaromartino.github.io/AL-unified_trade.pdf
+https://alfaromartino.github.io/ALFARO-MicroecNewTrade.pdf
+https://alfaromartino.github.io/ALFARO-jmp.pdf
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/alfaromartino/alfaromartino.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
