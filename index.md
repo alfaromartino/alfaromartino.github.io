@@ -12,4 +12,4 @@ Papers
 
 [Trade Liberalization with Granular Firms](https://alfaromartino.github.io/AW-GranularTrade.pdf)
 
-[Export Conditions in Small Countries and their Effects on Domestic Markets](https://github.com/alfaromartino/alfaromartino.github.io/blob/master/AW-SmallCountry.pdf)
+[Export Conditions in Small Countries and their Effects on Domestic Markets](https://alfaromartino.github.io/AW-SmallCountry.pdf)
