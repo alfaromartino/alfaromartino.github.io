@@ -22,7 +22,8 @@ updates = capture_PAGEdescription.(folder, files,"PAGEpost_update")
 
 page_names = replace.(files, r".md$" => "") #we remove .md
 pagemd     = string.(["PAGES\\"], files)
-pagelink   = string.(["\\PAGES\\"], page_names)
+# pagelink   = string.(["\\PAGES\\"], page_names)
+pagelink   = string.(["PAGES\\"], page_names)
 
 function dftoc_pages(page_names)
     chapter_nr  = eachindex(page_names)
