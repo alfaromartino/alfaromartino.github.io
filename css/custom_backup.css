@@ -1,0 +1,1772 @@
+/* THIS CONTROLS THE GLOBAL BEHAVIOR OF THE PAGE */
+html { scroll-behavior: auto;    
+    scroll-padding-top: 48px;/* for fixing that the navigation hides the title */}
+    
+
+.jumbotron{ 
+  margin-bottom: 10px;  
+}
+
+/* change font size */
+.franklin-content,.navbar, .nav-item, .jumbotron, .bar_topright {
+  font-size: 18px;
+} 
+
+
+.franklin-content, .jumbotron {   
+    margin-left: 200px;    
+  /* transform: translateX(250px); */      
+  }  
+
+  
+.franklin-content{
+  margin-top:0px;
+}
+
+.jumbotron {border-radius: 0;}
+
+
+
+header h1{  
+  font-size:250%;
+  text-align:center;  
+  margin-top: -20px;
+  font-family: 'Lucida Handwriting';
+}
+
+/* TITLE AND NAME */
+.name_format {  
+  color: white;
+  /* padding: -0.5em 1.0em; */
+  text-decoration: none;
+  font-size: 125%;
+  text-align: center;
+  }
+
+  .name_format:hover {    
+    /* color: rgb(83, 129, 175);     */
+    color: rgb(212, 212, 212);
+  }
+
+    
+  /* separation between title and my name */
+  .lead {    
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 0em;  
+    margin-top: 10px;  
+    padding-bottom: 0;  
+  }
+
+
+
+h2 {
+  font-size:175%;
+  text-align:left;
+}
+
+
+
+/* @media screen and (min-width: 992px) {
+  html {  
+    zoom: 100%;
+    width:100%;
+  }
+} */
+
+
+/* .jumbotron.jumbotron-fluid.container-fluid.bg-primary{
+  background-image: url(/assets/WallpaperDog-17291225.jpg);
+  background-size: cover;  
+} */
+
+/* FOR THE BODY - this changes its position*/
+/* .franklin-content {   
+  position:absolute;
+  margin-left: 0px; 
+  padding-top:0;}  */
+
+
+/* ALL 
+.franklin-content,.jumbotron, .bar_topright, .navbar, .nav-item {
+  font-family: "Segoe UI"; FONT USED by DEFAULT  BY FRANKLIN 
+} */
+
+/* HEADER + NAME
+  .jumbotron, h1{
+  font-family: "Raleway"; 
+  font-weight: 550;  
+} */
+
+/* ALL HEADER - title of page */
+/* .jumbotron {
+  text-align:left;
+  padding-left:20px;
+} */
+
+
+/* HEADER only - title of page */
+/* h1 {
+  text-align:left;
+} */
+
+/* FORMAT OF THE TEXT IN THE MAIN BODY */
+/* section .container{
+  margin-left: auto;  
+} */
+
+
+
+h2,h3{
+  text-align:center;
+  text-decoration: underline;    
+  padding-bottom: 0.5em;  
+}
+
+
+
+
+h4{
+  text-align:left;
+  /* color: rgb(73, 115, 157);  */   
+  text-decoration: underline;/*none; */
+  padding-bottom: 0.0em;
+  padding-top: 0.5em;
+  font-size: 120%;
+  font-weight: 600;
+}
+
+
+h5,h6{
+  text-indent:0;
+  line-height:0.1em;
+  padding-top:0.99em;
+  padding-bottom: 0.0em;  
+}
+
+section {
+  margin-left:0;  
+  /* font-family: "Open Sans"; */  
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.0%;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.65;
+  /* text-indent: 2.5%; */
+  text-indent: 0;
+  font-size: 100%;
+  color: black;  
+}
+
+/* section p {  margin-bottom:24px;} */
+
+
+
+
+section h1 { /* this is for the title defined as latex*/
+  text-indent:0;
+  margin-left:0px;    
+}
+  
+section h2 {  
+  text-indent: 0%; /* space between title and text  */
+  margin-bottom: 0em; /* space between title and text  */  
+} 
+
+
+.franklin-content ul { 
+  margin-left: 0em;
+  margin-top: -0.6em;
+  line-height: 1.15;}
+
+.franklin-content ul li p { 
+  margin-left: 0em;
+  margin-bottom: 0.6em;
+  line-height: 1.35;
+  text-indent:0;}
+
+.franklin-content ol li { 
+    margin-left: 2em;
+    line-height: 1.15;}
+
+ul ::marker {  
+  color: rgb(73, 115, 157); 
+}
+
+ol ::marker {
+  color: rgb(83, 129, 175);
+    font-weight: bold;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;    
+}
+
+
+section a {  
+  color: #2669DD;
+  text-decoration: underline;  
+}
+
+section a:hover{
+  color: #2669dd88;
+  text-decoration: underline;  
+}
+
+/* @media (min-width: 768px) {
+  .container{  
+    max-width: 70% !important;
+    zoom: 100%;           
+  }
+  .franklin-content,.jumbotron, .bar_topright, .navbar, .nav-item {
+    font-size: 19px;
+  } 
+} */
+
+
+
+/* ================================================================= 
+                              BULLETS
+================================================================= */ 
+/* VERSION 1 */
+.bullets{
+  margin-top: -18px;
+}
+.bullets ul { 
+  margin-left: 0em;
+  line-height: 1.15;
+  padding-top: 8px;}
+  
+
+.bullets ul li p { 
+  margin-left: 0em;
+  line-height: 1.55;
+  text-indent:0;}
+
+.bullets ul li { 
+    margin-left: 12px;
+    line-height: 1.15; }
+
+
+/* VERSION 2 */
+
+.itemNoSpace{
+  margin-top: -18px;
+}
+.itemNoSpace ul, .itemNoSpace ol { 
+  margin-left: 0em;
+  line-height: 1.15;
+  padding-top: 8px;}
+  
+
+.itemNoSpace ul li p, .itemNoSpace ol li p{ 
+  margin-left: 0em;
+  line-height: 1.15;
+  text-indent:0;}
+
+.itemNoSpace ul li, .itemNoSpace ol li { 
+    margin-left: 12px;
+    line-height: 1.15; }
+
+
+.itemNoSpace ol ::marker {
+  color: rgb(83, 129, 175);
+    font-weight: bold;
+}
+
+/* ================================================================= 
+                              CODE FORMAT  
+================================================================= */ 
+
+/* USEFUL TO CHANGE THE MARGINS OF THE CODE*/
+pre { margin-bottom: 2.5em; margin-top: 0.2em; margin-left: 0%; margin-right: 0%; 
+  overflow:hidden; /* for hiding #copied */}
+
+pre code.hljs {
+  position:relative;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 0em;
+  border-radius: 0px;
+  margin-bottom:-1.6em;
+  font-size: 95%;
+  line-height: 1.45;   
+}
+pre code.hljs.plaintext {
+	margin-bottom: 1em;
+  margin-left:0px;
+}
+
+code {  
+  background-color: rgba(223, 223, 223, 0.914); /*rgb(199, 223, 236);*/
+  color:black;
+  text-indent: 0%;  
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  vertical-align: 0.05em;
+}
+
+.warning pre, .remark pre, .modal-body pre {
+  margin-bottom: 1.2em;
+}
+
+
+pre .plainoutput{
+  /* color: #DCDCDC; */
+  color: #B8D7A3;
+  /* color:  #cde7ffe0; */
+  font-style:normal;
+  position:relative;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 0em;
+  border-radius: 0px;
+  margin-bottom:-1.6em;
+  font-size: 95%;
+  line-height: 1.45;
+  background-color:#1e1e1e;
+  
+}
+
+/* CODE ADJUSTMENTS (LEGACY FROM THE PACKAGE) */
+
+pre code.hljs {
+    border-radius: {{code_border_radius}};
+  }
+  
+  pre code.hljs.plaintext {
+    margin-left: {{code_output_indent}};  
+  }
+  
+  
+
+
+/* KEYBOARD STYLE */
+kbd {  
+  vertical-align: 10%;
+  padding:0.1em 0.6em;
+  border:1px solid black;
+  /* font-size:12px; */
+  font-size:70%;
+  font-family:Arial,Helvetica,sans-serif;
+  background-color: rgba(223, 223, 223, 0.914); 
+  color:#333;
+  -moz-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+  -webkit-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+  box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  display:inline-block;
+  margin:0 0.1em;
+  text-shadow:0 1px 0 #fff;  
+  white-space:nowrap;  
+  text-indent: 0;
+}
+
+
+/* SIMPLER FOR COPYING CODE */
+ pre {position:relative;}
+.copy-button {
+	cursor: pointer;
+	border: none;
+	font-size: 12px;
+	text-transform: lowercase;
+	font-weight: 500;
+	padding: 2px 10px 2px;
+	background-color:   #3f6b4b;
+	position: absolute;
+	top: 4px;  
+	right: 12px; /*Button shows in the right side of block*/
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0;  
+  z-index: 1;
+}
+
+.copy-button:hover{
+	outline: none;
+	background-color:#62a777;
+}
+.copy-button:focus {
+	outline: none;
+	background-color:  #3f6b4b;
+}
+
+ /* ================================================================= 
+                      NAVIGATION BAR
+================================================================= */ 
+.navbar{
+  z-index: 200;
+  position:fixed;
+  top:0;
+  right:0;
+  color: white;
+  border: none;
+  padding: 0px 0px;
+  display: block;
+  }
+
+.navbar-toggler {
+  position:relative;
+  background-color: rgba(63, 99, 136, 0);
+  border-radius: 0;
+  border:none;
+  height:40px;
+  font-size:18px;
+}
+
+.navbar-brand {  
+  font-size:18px;
+  padding-right:2px;
+}
+
+
+.navbar-nav{
+  position:fixed;  
+  padding-right:2px;
+  padding-left:16px; 
+  padding-top:2px; 
+  background-color: rgb(0, 0, 0);  
+  height:100% !important;    
+  width:300px;
+  font-size:1.2em;
+}
+
+.navbar-nav ul{
+  visibility: visible;  
+}
+
+
+.nav-item a{  
+    color: white !important;    
+}
+.nav-item a:hover{
+  color: rgb(160, 159, 159) !important;
+}
+
+#collapsibleNavbar{
+  transition: none;
+}
+
+
+
+/* ================================================================= 
+                              DROPDOWN 
+================================================================= */ 
+/* A DIFFERENT VERSION  TO NAVIGATE THE WEBSITE   
+IT CAN ALSO BE USED FOR DROPDOWNS LISTS*/
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(63,99,136);
+  color: white;  
+  border: none;
+  cursor: pointer;
+  position: fixed; /* Stay in place */  
+  z-index: 200; /* Stay on top */
+  top: 0;
+  left: 0;  
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover{
+  background-color: rgb(81, 127, 173);
+}
+
+.dropbtn:focus {
+  background-color: rgb(63,99,136);
+  outline:none;  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {  
+  z-index: 1;    
+  display: none;
+  position: fixed;
+  top: 50px;  
+  min-width: 160px;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);  
+  background-color: black/*#e4e4e4;*/;
+  color:white;  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color:white;  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color:rgb(81, 127, 173);
+color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;}
+
+
+
+
+
+
+/* ================================================================= 
+                      TOOLTIP - GENERAL APPROACH (NOT ONLY FOOTNOTES)
+================================================================= */ 
+
+
+.hovering_foot {
+  position: relative;
+  display: inline-block;
+  margin-left:-3px;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: rgb(85, 133, 182);  
+}
+
+.hovering_foot .h_foot_text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;  
+  
+  /* Position the hovering_foot */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.hovering_foot:hover .h_foot_text {
+  visibility: visible;
+}
+
+
+
+
+/* ================================================================= 
+                      FOOTNOTES with TOOLTIP
+================================================================= */ 
+
+
+.supr {
+  vertical-align: 80%;
+  font-size: 75%;
+  line-height: 1; 
+}
+.footn {
+  position: relative;
+  display: inline-block;
+  margin-left:-0.6em;
+  margin-right:0;
+  color: #2669DD;
+  text-decoration: underline;  
+  }
+
+.footn .footn_text {
+  font-size: 125%;
+  visibility: hidden;  
+  width: max-content; max-width: 500px;
+  text-align: justify;  
+  text-justify: inter-word;
+  text-indent: 0%;
+  line-height: 1.5;
+  background-color:#282c34;
+  color: #e0e4eb;
+  border-radius: 6px;
+  padding: 5px 12px 5px 12px;  
+  
+  /* Position the hovering_foot */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: -125px;  
+}
+
+.footn:hover .footn_text {
+  visibility: visible;
+  
+}
+
+.footn a{
+  color: #7b9fdd;
+  }
+
+.footn a:hover{
+  color: #a1b6dbb2;
+}
+
+
+
+
+
+/* =================================================================
+
+        EVERYTHING FOR LATEX 
+
+================================================================= */ 
+
+/* SIZE OF MATH IN LATEX */
+body { counter-reset: eqnum; }
+
+.katex { 
+  font-size: 100% !important;}
+
+.katex-display .katex {
+  /* Overwrite KaTeX settings. */
+  display: inline-block;
+  /* Allow display equations to wrap on small screens. */
+  white-space: normal;  
+}
+
+
+
+.katex-display::after {
+  counter-increment: eqnum;
+  content: "(" counter(eqnum) ")";
+  position: relative;  
+  float: right;
+  padding-right: 5px;  
+}
+
+.nonumber .katex-display::after {
+  counter-increment: nothing;
+  content: "";
+}
+
+
+/* ============================ 
+COLLAPSIBLE BOX IN LATEX 
+============================ */ 
+
+
+/* DROPPING AND DISPLAYING DETAILS STYLE*/
+.math_detail details {
+  width: 100%;
+  padding-left:0%;
+}
+
+.math_detail details > summary {
+  padding: 2px 6px;
+  width: 50%;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+}
+
+.math_detail details > p {
+  border-radius: 0 0 10px 10px;
+  background-color: #ddd;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px white;
+}
+
+.math_detail details p .katex { font-size: 100% !important;} 
+
+.math_detail details[open] > summary {
+  background-color: #ccf;  
+}
+
+
+
+
+/* ============================ 
+LINKIT
+============================ */ 
+.linkit a{color:black;}
+.linkit a:hover{color:black;}
+
+
+
+
+
+
+/* ============================ 
+            OTHERS  
+============================ */ 
+
+
+
+
+
+
+    
+
+/*@import url('https://fonts.googleapis.com/css?family=Monserrat:300,400,700');
+   @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700') */
+
+/* COLLAPSABLE OUTPUT BOX*/
+.output_box details > summary, .output_box_copied details > summary {  
+  width: max-content; max-width: 90%;
+  /* padding-top:1px; padding-bottom:1px; */
+  padding-left: 10px;
+  padding-right: 10px;  
+  background-color:  #3f6b4b;  
+  cursor: pointer;
+  color: #ffffff;
+  box-shadow: 3px 3px 4px black; 
+  text-indent:0;
+}
+
+.output_box details[open] > summary, .output_box_copied details[open] > summary {
+  width: max-content; max-width: 90%;
+  /* padding-top:1px; padding-bottom:1px; */
+  padding-left: 10px;  
+  padding-right: 10px;   
+  background-color: #3f6b4b;
+  border:#282c34; 
+  border-width:1px; 
+  border-style:solid;  
+}
+
+
+.output_box details > p, .output_box_copied details > p {
+  border-radius: 0 0 0px 0px;  
+  padding: 0px 0px 0px 0px;  
+  margin-bottom: -0.2em;
+}
+
+
+.output_box details[open], .output_box_copied details[open] {
+    margin-bottom: -3.5em;
+}
+
+
+
+
+
+
+
+/* COLLAPSABLE CODE BOX*/
+.code_box details > summary {  
+  width: max-content; max-width: 90%;  
+  padding-left: 10px;  
+  padding-right: 10px;  
+  background-color:  rgb(63,99,136); 
+  cursor: pointer;
+  color: #ffffff;
+  box-shadow: 3px 3px 4px black; 
+  text-indent:0;
+}
+
+.code_box details[open] > summary {
+  width: max-content; max-width: 90%;  
+  padding-left: 10px;  
+  padding-right: 10px; 
+  background-color: rgb(63,99,136);
+  border:#282c34; 
+  border-width:1px; 
+  border-style:solid;  
+}
+
+
+.code_box details > p {
+  border-radius: 0 0 0px 0px;  
+  padding: 0px 0px 0px 0px;  
+  margin-bottom: -0.2em;
+}
+
+
+.code_box details[open] {
+    margin-bottom: -3em;
+}
+
+.code_box details {
+  margin-bottom: -2px;
+}
+
+
+
+
+/* BOX FOR DEFINITION*/
+.definition {
+  background-color: rgb(228, 253, 234);
+  border-left: 5px solid rgb(81, 192, 114);  
+  border-radius: 10px;
+  padding: 2px;
+  margin-bottom: 1em;}
+
+/* BOX FOR WARNING*/
+.warning {
+  width:75%;
+  margin: auto; /*to center it*/
+  background-color: rgb(255, 214, 214);
+  border-left: 5px solid rgb(237, 100, 100);  
+  border-radius: 10px;    
+  margin-bottom: 3em;
+  padding:4px 4px;}
+
+.warning_title {
+  display:block; 
+  background-color: rgb(226, 140, 140);
+  border-radius: 5px;  
+  padding-left: 16px;
+  text-indent:0;
+}
+
+.warning .content {  
+  padding: 4px 16px;
+  padding-bottom: 0px;
+  text-indent:0;
+  line-height: 1.55;}
+
+/* BOX FOR NOTE*/
+.note {
+  width:75%;
+  margin: auto; /*to center it*/
+  background-color: rgb(228, 241, 253);
+  border-left: 5px solid cornflowerblue;
+  border-radius: 10px;    
+  margin-bottom: 2em;
+  padding-top:4px ;
+  padding-right:4px;
+  padding-left:4px;
+  padding-bottom:16px;}
+
+.note_title {  
+  display:block; 
+  background-color: rgba(136, 173, 241, 0.747);
+  border-radius: 5px;
+  padding-left: 16px;
+  text-indent:0;
+}
+
+.note .content {  
+  padding: 4px 16px;
+  padding-bottom: 0px;
+  text-indent:0;
+  line-height: 1.55;}
+
+.note .tab_wrapper {      
+  margin-bottom:0em;    }
+
+  
+
+/* COLLAPSIBLE WARNING */
+.warn_drop details > summary {  
+  width: 105px;
+  padding-left: 6px;
+  padding-right: 0px;
+  list-style: none;  
+  background-color: rgb(226, 140, 140);
+  border: none;  
+  margin: 0;  
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  color: black;
+}
+
+.warn_drop details > p {
+  width:90%;
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(255, 214, 214);
+  text-indent:0;
+  padding: 0px 0px 2px 6px;  
+  box-shadow: 3px 3px 4px white;
+}
+
+.warn_drop details[open] > summary {
+  width: 105px;
+  padding-left: 6px;
+  padding-right: 0px;
+  background-color: rgb(229, 157, 157);
+  border: rgb(241, 129, 129); 
+  border-width: 2px; 
+  border-style:solid;
+}
+
+
+
+/* COLLAPSIBLE NOTE */
+.note_drop details > summary {  
+  width: 70px;
+  padding-left: 6px;
+  padding-right: 0px;
+  list-style: none;  
+  background-color: rgba(136, 173, 241, 0.747);
+  border: none;  
+  margin: 0;  
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  color: black;
+}
+
+.note_drop details > p {
+  width:90%;  
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(228, 241, 253);
+  text-indent:0;
+  padding: 0px 0px 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px white;
+}
+
+.note_drop details[open] > summary {
+  width: 70px;
+  padding-left: 6px;
+  padding-right: 0px;
+  background-color: rgba(136, 173, 241, 0.534);
+  border: rgba(136, 173, 241, 0.89); 
+  border-width: 2px; 
+  border-style:solid;
+}
+
+
+/* COLLAPSIBLE PROOF */
+.proof details > summary {  
+  width: max-content; 
+  padding-left: 4px;
+  padding-right: 6px;
+  list-style: none;  
+  background-color: rgba(255, 255, 255, 0.616);
+  border: none;  
+  margin: 0;  
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  color: black;
+}
+
+.proof details > p {
+  width:90%;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(255, 255, 255, 0.795);
+  text-indent:0;
+  padding: 0px 0px 2px 6px;  
+  box-shadow: 3px 3px 4px white;
+}
+
+.proof details[open] > summary {
+  width: max-content; 
+  padding-left: 4px;
+  padding-right: 6px;
+  background-color: rgba(255, 255, 255, 0.795);
+  border: rgba(255, 255, 255, 0); 
+  border-width: 2px; 
+  border-style:solid;
+}
+
+
+
+
+  /* COLLAPSIBLE GIFS */
+  /* .vscode_bullets { 
+    margin-left: 0em;
+    line-height: 1.55;}
+  
+  .vscode_bullets li{
+    margin-bottom: 1em;    
+  } 
+  
+  .vscode_bullets li::marker{ 
+      font-size: 2em;
+      font-weight: bold;    
+  }
+  
+.vscode_bullets li p {  
+    vertical-align: -16px;
+    display: inline-block; }
+     */
+.vscode_bullets h4{
+  padding-top:32px;
+  }
+  
+.gif_drop{
+  color:white;
+  text-indent:0;
+  margin-top:0px;
+  margin-bottom:12px;}
+
+.gif_drop details > summary {  
+  display:inline-block;
+  width: auto;  
+  padding: 0px 6px;
+  list-style: none;  
+  color: white;
+  background-color:  #3f6b4b;
+  border: none;  
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;  
+}
+
+.gif_drop details[open] > summary {
+  width: auto;
+  padding: 0px 6px;
+  background-color:  #3f6b4b;  
+  border: #62a777;
+  border-width: 1px; 
+  color:white;
+  border-style:solid;
+}
+
+.gif_drop details > p {
+  display:block;
+  width:auto;  
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  padding: 0px 0px 2px 0px;
+  margin: 0;  
+}
+
+
+/* COLLAPSIBLE OUTPUT WITH IMGS */
+  
+.img_output{
+color:white;
+text-indent:0;
+margin-top:-15px;
+margin-bottom:0px;
+}
+
+.img_output details > summary {  
+width: max-content; max-width: 90%;
+height:auto;
+padding-left: 10px;  
+padding-right: 10px;  
+color: white;
+background-color:  #3f6b4b;
+border: none;  
+margin: 0;
+box-shadow: 3px 3px 4px black;
+cursor: pointer;  
+}
+
+
+.img_output details[open] > summary {
+width: max-content; max-width: 90%;
+padding-left: 10px;  
+padding-right: 10px;  
+background-color:  #3f6b4b;  
+border:#282c34; 
+border-width: 1px; 
+color:white;
+border-style:solid;
+}
+
+
+.img_output details > p {
+border-radius: 0 0 0px 0px;
+background-color: rgba(30,30,30,255);
+padding: 10px 6px 10px 6px;
+margin-bottom: 22px;
+margin-top: 0px;
+}
+
+
+
+
+
+/*===============================  */
+/*        CAROUSEL for IMG         */
+/*===============================  */
+.for_img .carousel {
+  position:relative;
+  padding-bottom: 50px;  
+  padding-top: 50px;  
+}
+
+.for_img .carousel .carousel-indicators li {background-color: rgba(0, 0, 0, 0.493);}
+.for_img .carousel .carousel-indicators li.active {background-color: black;}
+.for_img .carousel .carousel-indicators {
+  position: absolute;
+  bottom: -5px;  
+}
+.for_img .carousel-control-next-icon {
+  background-image: url(/assets/carousel-arrow-next.svg); background-size: contains; 
+  width: 70px;  height: 70px;
+  position: absolute;
+  bottom: -5px;  
+  left: -25%;}
+.for_img .carousel-control-prev-icon {
+  background-image: url(/assets/carousel-arrow-prev.svg); background-size: contains; 
+  width: 70px;  height: 70px;
+  position: absolute;
+  bottom: -5px;  
+  right: -25%;}
+
+.for_img .carousel-item img {
+  object-fit: contain;
+  height:100px;
+  overflow: hidden;  
+      }
+.for_img .carousel-item .d-block{
+  margin:auto;}
+
+
+/*===============================  */
+/*        CAROUSEL for CODE        */
+/*===============================  */
+.for_code .carousel {
+  position:relative;
+  padding-bottom: 30px;  
+  padding-top: 70px;  
+  bottom:40px;
+}
+
+.for_code .carousel .carousel-indicators li {background-color: rgba(0, 0, 0, 0.493);}
+.for_code .carousel .carousel-indicators li.active {background-color: black;}
+.for_code .carousel .carousel-indicators {
+  position: absolute;
+  bottom: -5px;    
+}
+.for_code .carousel-control-next-icon {
+  background-image: url(/assets/carousel-arrow-next.svg); background-size: contains; 
+  width: 70px;  height: 70px;
+  position: absolute;
+  bottom: -5px;  
+  left: -25%;}
+.for_code .carousel-control-prev-icon {
+  background-image: url(/assets/carousel-arrow-prev.svg); background-size: contains; 
+  width: 70px;  height: 70px;
+  position: absolute;
+  bottom: -5px;  
+  right: -25%;}
+
+.for_code .carousel-item img {
+  object-fit: contain;
+  height:100px;
+  overflow: hidden;  
+      }
+.for_code .carousel-item .d-block{
+  margin:auto;}
+
+
+
+
+
+/*===============================  */
+/*        INLINE FORMAT OF TEXT        */
+/*===============================  */
+
+.color-block {
+  display: inline-block;
+  background-color: #3f6b4b;
+  border:#282c34; 
+  border-width:1px; 
+  color:white;
+  width:auto;
+  padding-right:0.35em;
+  padding-left:0.25em;  
+}
+
+
+
+/*===============================  */
+/*        MODAL -  BLUE                   */
+/*===============================  
+background-color: rgb(63,99,136);rgb(81, 127, 173)
+background-color: rgba(136, 173, 241, 0.747);
+  rgb(85, 133, 182);  */
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 250; /* Sit on top */
+  margin-left: 100px;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */  
+  overflow: auto; /* Enable scroll if needed */  
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */      
+}
+
+
+/* Modal Content/Box */
+.modal-content {  
+  position: relative;
+  width:1050px; 
+  /* width:80%; */
+  height: max-content; max-height: 90%;
+  margin:auto;    
+  background-color: rgb(228, 241, 253);  
+  padding: 8px;
+  border: 1px solid #888;  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);  
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;  
+}
+
+
+.modal-header {
+  padding: 0;  
+  background-color: rgb(81, 127, 173);
+  color: white;    
+  width:100%;
+}
+
+.modal-header h2{ 
+  padding-top: 8px; 
+  font-size: 20px;
+  font-weight: bold;  
+  width: 100%;
+  text-align: center;  
+}
+
+.modal-body {
+  padding-top: 8px;  
+  padding-bottom: 2px;  
+  overflow:auto;  
+}
+
+.modal-body p{
+  padding: 0px 4px;
+  text-align: justify;
+  text-justify: inter-word;  
+  line-height: 1.55;
+  text-indent: 2.5%;}
+
+
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+
+/* modal button */
+.modalButton {
+  color:white;
+  background-color:rgb(81, 127, 173);
+  border: none;    
+  margin-bottom: 24px;
+  box-shadow: 3px 3px 4px black;
+}
+
+/* The Close Button */
+.modalClose {    
+  font-size: 0px;   
+}
+
+
+.bar_topleft .modalButton {
+  color:white;
+  background-color:rgb(81, 127, 173);
+  border: none;    
+  background-color: transparent; 
+  color:white; 
+  display:block; 
+  margin-left:-4px; 
+  margin-bottom: -4px;
+  box-shadow: 0 0 0 0;  
+}
+
+
+
+
+/* ================================================================= 
+                      TOP RIGHT - FOR GOING BACK HOME
+================================================================= */ 
+/*.bar_topright {
+  color: rgb(63,99,136);  
+  position: absolute;  
+  top: 0%;  
+  right: 0%;
+} */
+
+.bar_topright {  
+  background-color: rgb(0, 0, 0);  
+  position: fixed;  /* fixed to stay at the top */
+  width: 100%;
+  top: 0;
+  left: 0;  
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  z-index: 100;  
+} 
+
+.bar_topright a:hover {
+    color: rgb(160, 159, 159); 
+}
+
+
+.bar_topright li {  
+  list-style-type: none;
+  float:left;
+  position:relative;
+  left:-100px;
+  padding-left: 5%;  
+}
+
+.bar_topright li a{   
+  color: white;
+}
+
+
+
+
+/* bar topright modal (for sections) */
+
+.bar_topright .modal-content {  
+  position: relative;
+  width: 1200px; max-width: 90%;  
+  height: max-content; max-height: 90%;  
+}
+
+
+
+.bar_topright .modal-body .row{ 
+  margin-left: 0;    
+  margin-right: 0;  
+}
+
+.bar_topright .modal-body .column {
+  margin: 0px auto;
+}
+
+.bar_topright .modal-body ul li{ 
+  margin-left: 0em;  
+  /* line-height: 1.55; */
+  text-indent:0;   
+  font-size:90%;
+  line-height: 1.0;}
+
+  
+ /* .bar_topright .modal-body ul{
+  line-height: 1.0;
+  float:left;
+  position:relative;
+  margin-left:0px;   } */
+
+/* .bar_topright .modal-body li {  
+  float:left;
+  position:relative;
+  left:100px;      
+}  */
+
+.bar_topright .modal-body li {  
+  float:left;  
+  position:relative;
+  left:0px;
+  right:0px;
+padding:0;}
+  
+
+
+
+/* Clear floats after the columns */
+.modal-body .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* .modal-body ul {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+} */
+ 
+/* .modal-body .multi-column {
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -moz-column-fill: auto;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  -webkit-column-fill: auto;
+  column-count: 2;
+  column-gap: 20px;
+  column-fill: auto;
+  list-style-position: inside;
+} */
+/*===============================  */
+/*        HORIZONTAL TAB        */
+/*===============================  */
+
+
+
+/* Style tab links */
+.tab_wrapper{
+  width:100%;   
+  display:inline-block; 
+  margin-bottom:1em;    
+  }
+
+
+.tab_code_links{  
+  padding-top:0px;  
+}
+
+.tab_code_links .tablink {  
+  color: white;
+  background-color: rgb(63,99,136);
+  /* background-image:linear-gradient(to right top, black, rgb(63,99,136) 50%, black); */
+  /* font-weight:bold; */
+  /* font-style: italic; */
+  float:left;
+  border: 1px solid black;  
+  outline: none;
+  cursor: pointer;
+  padding: 2px 20px;
+  font-size: 100%;
+  width: max-content;
+}
+
+.tab_code_links .tablink:hover {
+  background-color:rgba(82, 127, 173, 0.836);
+}
+
+
+.tabcontent {  
+  margin-top:-4px;
+  display: none;  
+  padding-top: 0px;  
+  margin-bottom: -10px;
+  width: 100%;  
+  float:left;   
+}
+
+.tabcontent p{    
+  margin-top:5px;
+  background-color:#282c34;
+  color: #abb2bf;
+  padding: 10px 10px;    
+  text-indent: 0;
+  width: 100%;
+  display:block;
+  height: auto;
+  float:left;
+}
+
+.tabcontent.active {
+  display: block;}
+
+  .tablink.active {
+    background-color:rgba(82, 127, 173, 0.836);    
+    font-weight:500;
+  /* font-style: italic; */  
+}
+
+.tab_wrapper .tablink.first_tab{padding-left: 54px;}
+
+
+
+
+
+/* FOR LINKS PAGE*/
+.linkPage h1,.linkPage h2,.linkPage h3,.linkPage h4{
+  text-align :justify;
+  padding-bottom: 0.2em;
+  text-decoration: underline;
+  font-size:140%;
+}
+
+.linkPage section {
+  padding-top: 18px;
+  padding-bottom: 0;
+  text-indent: 0%;
+  font-size:100%;
+  line-height: 1.45;
+}
+
+
+
+
+
+
+/* ============================ */
+/*          COLLAPSE TABS     */
+/* ============================ */
+
+.hide_tab > details > summary {  
+  width: 30px; max-width: 90%;  
+  padding-left: 10px; 
+  padding-right: 0px;
+  padding-bottom: 3px;
+  background-color:  rgb(63,99,136);   
+  cursor: pointer;
+  color: #ffffff;
+  text-indent:0;  
+  border:#282c34; 
+  border-width:1px;  
+  border-style:solid;   
+}
+
+.hide_tab > details[open] > summary {
+  position:absolute;
+  width: 35px; max-width: 90%;      
+  height:40px;
+  margin-bottom: -20px;
+  padding-bottom: 0px;
+  padding-top: 3px;   
+  padding-left: 12px;  
+  padding-right: 5px;   
+  background-color: rgb(63,99,136);
+  border:#282c34; 
+  border-width:1px;  
+  border-style:solid;   }
+
+
+.hide_tab > details > p {
+  border-radius: 0 0 0px 0px;  
+  padding: 0px 0px 0px 0px;  
+  margin-bottom: -1px;
+}
+
+.hide_tab > details[open] {
+  margin-bottom: -2.5em;
+}
+.hide_tab > details {
+margin-bottom: -8px;
+}
+
+
+
+/* ============================ */
+/*          COLLAPSE TABS - HIDE BUT FOR OUTPUTS    */
+/* ============================ */
+
+
+
+.hide_output  > details > summary {  
+  width: 30px; max-width: 90%;  
+  /* height: 30px;  margin-top: 1px;      */
+  padding-left: 10px;  
+  padding-right: 0px;    
+  padding-bottom: 3px;
+  background-color:  #3f6b4b;
+  cursor: pointer;  
+  color: #ffffff;
+  text-indent:0;  
+  border:#282c34;  
+  border-width:1px;  
+  border-style:solid;   
+}
+
+
+.hide_output  > details[open] > summary {  
+  position:absolute;
+  width: 35px; max-width: 90%;      
+  height:40px;
+  margin-bottom: -20px;
+  padding-bottom: 0px;
+  padding-top: 3px;   
+  padding-left: 12px;  
+  padding-right: 5px;
+  background-color:  #3f6b4b;
+  border:#282c34; 
+  border-width:1px;    
+  border-style:solid;   
+  
+}
+
+
+.hide_output > details > p {
+  border-radius: 0 0 0px 0px;  
+  padding: 0px 0px 0px 0px;  
+  margin-bottom: -15px;
+}
+
+.hide_output  > details[open] {
+  margin-bottom: -2.9em;
+}
+
+.hide_output > details {
+margin-bottom: -8px;
+margin-top: -12px;
+}
+
+.tab_wrapper_output{
+  width:100%;  
+  display:inline-block;   
+  }
+
+.tab_wrapper_output .tab_code_links .tablink {  
+  color: white;
+  background-color:  #3f6b4b;
+  /* background-image:linear-gradient(to right top, black, rgb(63,99,136) 50%, black); */
+  /* font-weight:bold; */
+  /* font-style: italic; */
+  float:left;
+  border: 1px solid black;  
+  outline: none;
+  cursor: pointer;
+  padding: 2px 20px;
+  font-size: 100%;
+  width: max-content;
+}
+
+.tab_wrapper_output .tab_code_links .tablink:hover {
+  background-color:  #3f6b4bb4;
+}
+
+
+.tab_wrapper_output .tabcontent {  
+  margin-top:-4px;
+  display: none;  
+  padding-top: 0px;  
+  margin-bottom: -10px;
+  width: 100%;    
+  float:left;   
+}
+
+.tab_wrapper_output .tabcontent p{    
+  margin-top:5px;
+  background-color:#282c34;
+  color: #abb2bf;
+  padding: 10px 10px;  
+  text-indent: 0;
+  width: 100%;
+  display:block;
+  height: auto;
+  float:left;
+}
+
+.tab_wrapper_output .tabcontent.active {
+  display: block;}
+
+  .tab_wrapper_output .tablink.active {
+    background-color:  #3f6b4bb4;
+    font-weight:500;
+  /* font-style: italic; */  
+}
+.tab_wrapper_output .tablink.first_tab{padding-left: 54px;}
+
+
+
+
+
+
+/* QUADRANTS */
+
+
+
+  /* background-image: url('/assets/pics/dog_home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  /* background-color: rgb(63, 99, 136);   */
+
+
+
+  .container_dog{
+    margin: auto;
+    width: 600px;
+    height:600px;
+    position: relative;  
+  }
+  
+  .background_dog {
+    background-color: rgb(63,99,136);  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  
+  .quadrant {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    opacity: 1.0;
+    cursor: pointer;
+    transition: opacity 0.001s ease-in-out;    
+  }
+  
+  .quadrant{
+    /* color: inherit;     */
+    /* font-weight:600; */            
+    color: rgb(63,99,136);    
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff, 0px 0px 5px  #fff;
+  }
+
+  .quadrant a {  
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    width: 100%;
+    height: 100%;    
+  }
+  
+  .quadrant span {
+    pointer-events: none;
+  }
+  
+  .quadrant:hover {
+    opacity: 0.5;
+  }
+  
+  .quadrant.top-left {
+    top: 0;
+    left: 0;
+    background-image: url('/assets/pics/dog_books.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .quadrant.top-right {
+    top: 0;
+    right: 0;
+    background-image: url('/assets/pics/dog_computer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .quadrant.bottom-left {
+    bottom: 0;
+    left: 0;
+    background-image: url('/assets/pics/dog_teaching.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .quadrant.bottom-right {
+    bottom: 0;
+    right: 0;
+    background-image: url('/assets/pics/dog_logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
