@@ -1,0 +1,449 @@
+
+
+/* ================================================================= 
+                              BULLETS
+================================================================= */ 
+/* VERSION 1 */
+
+
+
+.bullets ul, .bullets ol { 
+  margin:0;
+  line-height: 1.55;
+  padding-top: 1em;
+  padding-bottom: 0;}
+
+  .bullets ul li, .bullets ol li  { 
+    margin-left: 12px;
+    line-height: 1.55; 
+  margin-bottom:0;}
+
+.bullets ul li p, .bullets ol li p{ 
+  margin-left: 0;
+  margin-bottom:0;
+  line-height: 1.55
+  }
+
+
+.bullets li > ul, li > ul > li, li > ol, li > ol > li{    
+    margin-top:0;     
+    margin-left:-2em;
+  }
+
+
+.bullets ol ::marker, .bullets ul ::marker {
+  color: rgb(83, 129, 175);
+    font-weight: bold;
+}
+
+
+/* VERSION 2 */
+
+.itemNoSpace{
+  margin-top: -18px;
+}
+.itemNoSpace ul, .itemNoSpace ol { 
+  margin-left: 0em;
+  line-height: 1.55;
+  padding-top: 1em;
+  padding-bottom: 0px;}
+
+  .itemNoSpace ul li, .itemNoSpace ol li  { 
+    margin-left: 12px;
+    line-height: 1.55; 
+  margin-bottom:-1em;}
+
+.itemNoSpace ul li p, .itemNoSpace ol li p{ 
+  margin-left: 0em;
+  margin-bottom:0em;
+  line-height: 1.55;
+  text-indent:0;}
+
+
+.itemNoSpace li > ul, li > ul > li, li > ol, li > ol > li{    
+    margin-top: -0.5em;
+    margin-bottom: 2em;
+    padding-top:-1em;
+    padding-bottom:1em;    
+  }
+
+
+
+.itemNoSpace ol ::marker {
+  color: rgb(83, 129, 175);
+    font-weight: bold;
+}
+
+
+
+
+/* KEYBOARD STYLE */
+kbd {  
+  vertical-align: 10%;
+  padding:0.1em 0.6em;
+  border:1px solid black;
+  /* font-size:12px; */
+  font-size:70%;
+  font-family:Arial,Helvetica,sans-serif;
+  background-color: rgba(223, 223, 223, 0.914); 
+  color:#333;
+  -moz-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+  -webkit-box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+  box-shadow:0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 3px rgba(255, 255, 255, 0.9) inset;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  display:inline-block;
+  margin:0 0.1em;
+  text-shadow:0 1px 0 #fff;  
+  white-space:nowrap;  
+  text-indent: 0;
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+/* ================================================================= 
+                      TOOLTIP - GENERAL APPROACH (NOT ONLY FOOTNOTES)
+================================================================= */ 
+
+
+.hovering_foot {
+  position: relative;
+  display: inline-block;
+  margin-left:-3px;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: rgb(85, 133, 182);  
+}
+
+.hovering_foot .h_foot_text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;  
+  
+  /* Position the hovering_foot */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.hovering_foot:hover .h_foot_text {
+  visibility: visible;
+}
+
+
+
+
+
+
+
+/* =================================================================
+
+        EVERYTHING FOR LATEX 
+
+================================================================= */ 
+
+/* SIZE OF MATH IN LATEX */
+body { counter-reset: eqnum; }
+
+.katex { 
+  font-size: 100% !important;}
+
+.katex-display .katex {
+  /* Overwrite KaTeX settings. */
+  display: inline-block;
+  /* Allow display equations to wrap on small screens. */
+  white-space: normal;  
+}
+
+
+
+.katex-display::after {
+  counter-increment: eqnum;
+  content: "(" counter(eqnum) ")";
+  position: relative;  
+  float: right;
+  padding-right: 5px;  
+}
+
+.nonumber .katex-display::after {
+  counter-increment: nothing;
+  content: "";
+}
+
+
+/* ============================ 
+COLLAPSIBLE BOX IN LATEX 
+============================ */ 
+
+
+/* DROPPING AND DISPLAYING DETAILS STYLE*/
+.math_detail details {
+  width: 100%;
+  padding-left:0%;
+}
+
+.math_detail details > summary {
+  padding: 2px 6px;
+  width: 50%;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+}
+
+.math_detail details > p {
+  border-radius: 0 0 10px 10px;
+  background-color: #ddd;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px white;
+}
+
+.math_detail details p .katex { font-size: 100% !important;} 
+
+.math_detail details[open] > summary {
+  background-color: #ccf;  
+}
+
+
+
+
+
+
+/* BOX FOR DEFINITION*/
+.definition {
+  background-color: rgb(228, 253, 234);
+  border-left: 5px solid rgb(81, 192, 114);  
+  border-radius: 10px;
+  padding: 2px;
+  margin-bottom: 1em;}
+
+/* BOX FOR WARNING*/
+.warning {
+  width:75%;
+  margin: auto; /*to center it*/
+  background-color: rgb(255, 214, 214);
+  border-left: 5px solid rgb(237, 100, 100);  
+  border-radius: 10px;    
+  margin-bottom: 3em;
+  padding:4px 4px;}
+
+.warning_title {
+  display:block; 
+  background-color: rgb(226, 140, 140);
+  border-radius: 5px;  
+  padding-left: 16px;
+  text-indent:0;
+}
+
+.warning .content {  
+  padding: 4px 16px;
+  padding-bottom: 0px;
+  text-indent:0;
+  line-height: 1.55;}
+
+/* BOX FOR NOTE*/
+.note {
+  width:75%;
+  margin: auto; /*to center it*/
+  background-color: rgba(228, 241, 253, 0.795);
+  border-left: 5px solid cornflowerblue;
+  border-radius: 10px;    
+  margin-bottom: 2em;
+  padding-top:4px ;
+  padding-right:4px;
+  padding-left:4px;
+  padding-bottom:16px;}
+
+.note_title {  
+  display:block; 
+  background-color: rgba(136, 173, 241, 0.747);
+  border-radius: 5px;
+  padding-left: 16px;
+  text-indent:0;
+}
+
+.note .content {  
+  padding: 4px 16px;
+  padding-bottom: 0px;
+  text-indent:0;
+  line-height: 1.55;}
+
+.note .tab_wrapper {      
+  margin-bottom:0em;    }
+
+  
+
+/* COLLAPSIBLE WARNING */
+.warn_drop details > summary {  
+  width: 105px;
+  padding-left: 6px;
+  padding-right: 0px;
+  list-style: none;  
+  background-color: rgb(226, 140, 140);
+  border: none;  
+  margin: 0;  
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  color: black;
+}
+
+.warn_drop details > p {
+  width:90%;
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(255, 214, 214);
+  text-indent:0;
+  padding: 0px 0px 2px 6px;  
+  box-shadow: 3px 3px 4px white;
+}
+
+.warn_drop details[open] > summary {
+  width: 105px;
+  padding-left: 6px;
+  padding-right: 0px;
+  background-color: rgb(229, 157, 157);
+  border: rgb(241, 129, 129); 
+  border-width: 2px; 
+  border-style:solid;
+}
+
+
+
+/* COLLAPSIBLE NOTE */
+.note_drop details > summary {  
+  width: 70px;
+  padding-left: 6px;
+  padding-right: 0px;
+  list-style: none;  
+  background-color: rgba(136, 173, 241, 0.747);
+  border: none;  
+  margin: 0;  
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  color: black;
+}
+
+.note_drop details > p {
+  width:90%;  
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(228, 241, 253);
+  text-indent:0;
+  padding: 0px 0px 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px white;
+}
+
+.note_drop details[open] > summary {
+  width: 70px;
+  padding-left: 6px;
+  padding-right: 0px;
+  background-color: rgba(136, 173, 241, 0.534);
+  border: rgba(136, 173, 241, 0.89); 
+  border-width: 2px; 
+  border-style:solid;
+}
+
+
+/* COLLAPSIBLE PROOF */
+.proof details > summary {  
+  width: max-content; 
+  padding-left: 4px;
+  padding-right: 6px;
+  list-style: none;  
+  background-color: rgba(255, 255, 255, 0.616);
+  border: none;  
+  margin: 0;  
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  color: black;
+}
+
+.proof details > p {
+  width:90%;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(255, 255, 255, 0.795);
+  text-indent:0;
+  padding: 0px 0px 2px 6px;  
+  box-shadow: 3px 3px 4px white;
+}
+
+.proof details[open] > summary {
+  width: max-content; 
+  padding-left: 4px;
+  padding-right: 6px;
+  background-color: rgba(255, 255, 255, 0.795);
+  border: rgba(255, 255, 255, 0); 
+  border-width: 2px; 
+  border-style:solid;
+}
+
+
+
+
+/*===============================  */
+/*        INLINE FORMAT OF TEXT        */
+/*===============================  */
+
+.color-block {
+  display: inline-block;
+  background-color: #3f6b4b;
+  border:#282c34; 
+  border-width:1px; 
+  color:white;
+  width:auto;
+  padding-right:0.35em;
+  padding-left:0.25em;  
+}
+
+
+
+
+.descriptionData details > summary {    
+  list-style: none;  
+  cursor: pointer;
+  list-style: none;  
+  padding-bottom:0em;
+}
+
+.descriptionData details[open] > summary  {    
+  padding-bottom:0em;  
+}
+
+.descriptionData p {
+  padding-bottom:1em;
+}
+ 
+
+.divsummary .code_box details[open] > summary::marker, .divsummary .code_box details > summary::marker{  
+  color:white;  
+}
+
+/* .divsummary details[open] > summary::marker, .divsummary details > summary::marker{  
+  color:black;  
+} */
+
+   .coauthor a{      
+    color: rgb(81, 126, 171);
+    font-weight:400;}
+
+    .coauthor a:hover{      
+      color: rgba(63, 99, 136, 0.575);
+      text-decoration: underline;
+      font-weight:400}
+
