@@ -1733,81 +1733,12 @@ h1{
 
 
 <div class="franklin-content">
-<section id="description_of_the_issue_covered" class="scrollspy">
+<section id="summary" class="scrollspy">
   <div class="container">
     <div class="row">
       <div class="col-lg- mx-auto">
-        <h2>Description of the Issue Covered</h2></p>
- <div class=note>  <div class=title>  <span class="note_title" style="font-weight:500;">
-      <img src="/blog/assets/icons/exclamation.png" style="width:auto; height:30px;opacity:0.99;padding-bottom:4px; margin-left:-4px;">      
-      Remark </span>  </div>  <div class=content>     If you stumble upon issues when updating packages, this post guides you on how to handle the upgrade process. However, <strong> if you aren't experiencing any issues with package updates, this post won't be relevant to you.</strong>  </div>  </div>
-<p>Packages in Julia rely on other packages, known as their  <em> dependencies</em>. When a package is downloaded, Julia also installs any dependencies required by the package.</p>
-<p>To better understand this process, consider two packages, <code>SomePackage</code> and <code>Statistics</code>. Suppose additionaly that <code>SomePackage</code> uses version 1.2 of <code>Statistics</code> as a dependency. If the developers of <code>Statistics</code> released a new version &#40;let&#39;s say version 1.3&#41;, the authors of <code>SomePackage</code> must update their package to version 1.3 of <code>Statistics</code>. Not doing so will result in Julia impeding the update of <code>Statistics</code> when you execute <code>Pkg.update&#40;&#41;</code>, leaving you stuck on version 1.2. </p>
-<p>This is a consequence of how Julia updates packages. When you execute <code>Pkg.update&#40;&#41;</code>, Julia identifies the oldest versions of each package, including their dependencies. Then, it proceeds to install the oldest version identified. While preventing the update of some package may seem tedious, the aim is to avoid introducing breaking changes in your code. By sticking to the minimum version used as a dependency, Julia ensures that all your projects will still run.</p>
-<p>In this context, you have two options. If you need version 1.3 of Statistics, you&#39;ll have to remove <code>SomePackage</code> by executing <code>Pkg.rm&#40;&quot;SomePackage&quot;&#41;</code>.  Alternatively, you can use version 1.2. of <code>Statistics</code>, and wait until the developers of <code>SomePackage</code> update their dependencies &#40;well-maintained packages are typically updated within a few days&#41;.</p>
-<p>The problem with taking the first path is that <strong> Julia can be somewhat cryptic about what package is preventing the update</strong>. In terms of the example, identifying <code>SomePackage</code> is not trivial, as it may be the dependency of a dependency that is impeding the update. Next, we show how to address this issue.</p>
-<p>      </div>
-    </div>
-  </div>
-</section>
-<section id="miscellaneous_optional" class="scrollspy section-bg-color">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg- mx-auto">
-        <h2>Miscellaneous (OPTIONAL)</h2></p>
-<p>To facilitate the explanation, let me describe a recent experience I had, after not using one of my computers for a long time. I ran <code>Pkg.update&#40;&#41;</code> and checked the installed versions on my computer by using <code>Pkg.status&#40;&#41;</code>. The results were as follows.</p>
- <div class=" code_box"> <details  open><summary> Code  </summary> <div class="code_inline"><div class="code_NoFormat"></p>
-<pre><code class="language-julia">Pkg.status&#40;&#41;</code></pre>
-<p></div> </div> <div class="img_output_in_modal output_in_modal"><div class="sign_output">Output in REPL </div>   <div class="img_output">
-    <p> <img style="width: 1200px; height:auto; max-width:100%;" src=" /assets/PAGES/01_packageUpdate/pics/pkg01.png"/>
-    </p>
-    </div> </div>   </details></div>
-<p>As can be seen, the installed version of <code>DataFrames</code> was not up-to-date, and Julia wouldn&#39;t let me update it in isolation. Moreover, I needed <code>DataFrames</code> for the project I was working on, as the version installed was too old. Thus, I needed to i&#41; identify what packages were preventing the update of <code>DataFrames</code>, ii&#41; and remove those packages. To gain more insight into the packages in conflict, we can use the option <code>outdated</code> of the command <code>Pkg.status</code>. </p>
- <div class=" code_box"> <details  open><summary> Code  </summary> <div class="code_inline"><div class="code_NoFormat"></p>
-<pre><code class="language-julia">Pkg.status&#40;outdated&#61;true&#41;</code></pre>
-<p></div> </div> <div class="img_output_in_modal output_in_modal"><div class="sign_output">Output in REPL </div>   <div class="img_output">
-    <p> <img style="width: 450px; height:auto; max-width:100%;" src=" /assets/PAGES/01_packageUpdate/pics/pkg02.png"/>
-    </p>
-    </div> </div>   </details></div>
-<p>Let&#39;s analyze this information with the specific goal of updating <code>DataFrames</code> in mind. The output indicates that the installed version of <code>DataFrames</code> in the system is v0.21.8, whereas the last available version is v1.4.4. Although not important for our purposes, it also reveals that <code>DataFrames</code> is blocking the update of <code>CategoricalArrays</code>. Consequently, once we solve the update of <code>DataFrames</code>, we&#39;ll simultaneously solve the issue with <code>CategoricalArrays</code>.</p>
-<p>However, this information doesn&#39;t indicate what packages are conflicting with the update of <code>DataFrames</code>. To identify this, we&#39;ll use <code>Pkg.add</code>, but with an option that specifies the version of <code>DataFrames</code> to be installed &#40;v1.4.4 in this case&#41;. This won&#39;t allow the update to occur, but it&#39;ll reveal the cause. </p>
- <div class=" code_box"> <details  open><summary> Code  </summary> <div class="code_inline"><div class="code_NoFormat"></p>
-<pre><code class="language-julia">Pkg.add&#40;Pkg.PackageSpec&#40;; name&#61;&quot;DataFrames&quot;, version&#61;&quot;1.4.4&quot;&#41;&#41;</code></pre>
-<p></div> </div> <div class="img_output_in_modal output_in_modal"><div class="sign_output">Output in REPL </div>   <div class="img_output">
-    <p> <img style="width: 900px; height:auto; max-width:100%;" src=" /assets/PAGES/01_packageUpdate/pics/pkg03.png"/>
-    </p>
-    </div> </div>   </details></div>
-<p>The output shows that the package <code>TexTables</code> uses <code>DataFrames</code> as a dependency and hasn&#39;t been maintained for a while. By removing it, we&#39;ll be able to update <code>DataFrames</code>.</p>
- <div class=" code_box"> <details  open><summary> Code  </summary> <div class="code_inline"><div class="code_NoFormat"></p>
-<pre><code class="language-julia">Pkg.rm&#40;&quot;TexTables&quot;&#41;
-Pkg.update&#40;&#41;</code></pre>
-<p></div> </div> <div class="img_output_in_modal output_in_modal"><div class="sign_output">Output in REPL </div>   <div class="img_output">
-    <p> <img style="width: 450px; height:auto; max-width:100%;" src=" /assets/PAGES/01_packageUpdate/pics/pkg04.png"/>
-    </p>
-    </div> </div>   </details></div>
-<p>Notice we executed <code>Pkg.update&#40;&#41;</code> rather than <code>Pkg.update&#40;&quot;DataFrames&quot;&#41;</code>. In this way, other packages that couldn&#39;t be updated will be indirectly updated as well. In our case, this made it possible to update <code>CategoricalArrays</code>, which in turn allowed for the update of <code>Distributions</code> and <code>FixedEffectModels</code>.</p>
-<p>      </div>
-    </div>
-  </div>
-</section>
-<section id="conclusion" class="scrollspy">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg- mx-auto">
-        <h2>Conclusion</h2></p>
-<p>To avoid dealing with issues of this kind &#40;or at least minimizing them&#41;, we should follow the following two steps.</p>
-<p>
-<ol style="list-style-type: lower-roman;"><li style="font-weight:normal" value=" 1">
-<span style="padding-left:0.0em;margin-bottom:-0.8em;display:block;"> Install in <code>Base</code> only those packages that are essential
-</span></li></ol>
-
- This means that we should keep a minimum set of officially supported packages in <code>Base</code>. For the rest, we should create environments.</p>
-<p>
-<ol style="list-style-type: lower-roman;"><li style="font-weight:normal" value=" 2">
-<span style="padding-left:0.0em;margin-bottom:-0.8em;display:block;"> Create Environments
-</span></li></ol>
-
- Julia lets you create what&#39;s called a  <em> package environment</em>. This allows the user to install a set of packages and versions for each script you&#39;re working on. In this way, each project will have its own set of packages and versions, preventing you from accummulating &quot;legacy&quot; packages that are no longer maintained. You can find more information on package environments in <a href="https://pkgdocs.julialang.org/v1/environments/"><code>Pkg</code>&#39;s official documentation</a>.</p>
+        <h2>Summary</h2></p>
+<p>The note is posted on my website, in the section Coding Guides <a href="https://alfaromartino.github.io/coding/PAGES/01_heatmaps_world/">here</a>.</p>
 <p>      </div>
     </div>
   </div>
@@ -2268,15 +2199,7 @@ window.onkeydown = function(event) {
     <ul class="navbar-nav">
       
       <li class="nav-item">
-        <a class="nav-link" href="#description_of_the_issue_covered" data-offset="-40">Description of the Issue Covered</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="#miscellaneous_optional" data-offset="-40">Miscellaneous (OPTIONAL)</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="#conclusion" data-offset="-40">Conclusion</a>
+        <a class="nav-link" href="#summary" data-offset="-40">Summary</a>
       </li>
       
     </ul>
