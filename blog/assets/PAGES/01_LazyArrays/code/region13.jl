@@ -1,1 +1,0 @@
-@btime to_benchmark(compute_profit2, $dfg);
