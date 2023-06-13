@@ -1550,25 +1550,34 @@ h1{
             font-size: 14px;}
 
         
+                    
         .kbd_shortcuts .modal {
-            padding-left:1%; padding-right:1%;
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 350; /* Sit on top */            
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */  
+            overflow: auto; /* Enable scroll if needed */  
+            /* background-color: rgba(0,0,0,0.4); */
+            padding-top:48px;             
+            padding-left: 180px;
             
         }
             
         .kbd_shortcuts .modal-content {
             background-color: rgb(207, 218, 228); /* rgb(235, 235, 235); */
-            position: relative;            
             max-width: 90%;
-            height: max-content;
-            max-height: 90%;
+            height: max-content; max-height: 90%;
             margin:0; padding:0;            
-            margin-left: 180px;            
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
 
         .kbd_shortcuts .modal-body {
-            margin-left: 8px;
-            padding-bottom: 12px; 
+            margin-left: 8px;            
             text-align: left;
             
             padding-top: 8px;
