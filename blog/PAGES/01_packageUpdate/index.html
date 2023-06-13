@@ -1559,7 +1559,7 @@ h1{
             width: 100%; /* Full width */
             height: 100%; /* Full height */  
             overflow: auto; /* Enable scroll if needed */  
-            /* background-color: rgba(0,0,0,0.4); */
+            background-color: transparent;
             padding-top:48px;             
             padding-left: 180px;
             
@@ -1587,13 +1587,15 @@ h1{
 
 
         .kbd_shortcuts .modal-header {
-            padding: 0;            
+            padding: 0; 
+            margin:0;           
             color: white;
             width: 100%;            
+            background-color: rgb(63,99,136)
         }
 
         .kbd_shortcuts .modal-header h2 {
-            padding-top: 8px;
+            padding-top: 16px;
             font-size: 20px;
             font-weight: bold;
             width: 100%;
@@ -1766,7 +1768,7 @@ h1{
  <div class=" code_box"> <details  open><summary> Code  </summary> <div class="code_inline"><div class="code_NoFormat"></p>
 <pre><code class="language-julia">Pkg.status&#40;outdated&#61;true&#41;</code></pre>
 <p></div> </div> <div class="img_output_in_modal output_in_modal"><div class="sign_output">Output in REPL </div>   <div class="img_output">
-    <p> <img style="width: 450px; height:auto; max-width:100%;" src=" ./pics/pkg02.png"/>
+    <p> <img style="width: 450px; height:auto; max-width:100%;" src=" /blog/assets/PAGES/01_packageUpdate/pics/pkg02.png"/>
     </p>
     </div> </div>   </details></div>
 <p>Let&#39;s analyze this information with the specific goal of updating <code>DataFrames</code> in mind. The output indicates that the installed version of <code>DataFrames</code> in the system is v0.21.8, whereas the last available version is v1.4.4. Although not important for our purposes, it also reveals that <code>DataFrames</code> is blocking the update of <code>CategoricalArrays</code>. Consequently, once we solve the update of <code>DataFrames</code>, we&#39;ll simultaneously solve the issue with <code>CategoricalArrays</code>.</p>
