@@ -894,7 +894,6 @@ margin-top: 0px;
 
 
 
-
   </style>  
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Poppins|Crimson+Text|Cardo|Ubuntu"></link> -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Crimson+Text"></link>
@@ -1189,27 +1188,45 @@ a.anchor {
 
 
 @media (max-width: 768px) {
-     .franklin-content,.jumbotron, .bar_top, .navbar, .nav-item, .left_bar, .bar_top {
+     .franklin-content,.jumbotron, .bar_top, .navbar, .nav-item, .left_bar, .bar_top{
         font-size:80% !important;}
 
-     .left_bar{width:100px !important;}  
+        h1, h2, .lead {font-size: 130%;}
 
-    .bar_top{left:0; margin-left:3%;padding-left:0;width:auto;
-      background-image: none !important; 
-      background-color:transparent;}  
+     .bar_top, nav, .copy-button, .left_bar .personal_website, .py-1 .container .center-text{
+      visibility:hidden; width:0;}  
 
-    .bar_top .modalButton {        
-      box-shadow: none !important;
-    }
-    .franklin-content, .jumbotron {      
-        padding-left: 100px !important;
-        padding-right: 3% !important;}
-      
-    .left_bar img{ max-width:40%;} 
-
-    nav{visibility:hidden;}  
-        
     
+    .franklin-content, .jumbotron {      
+        padding-left: 60px !important;
+        padding-right: 1% !important;}
+      
+    
+     .left_bar{width:60px !important;}
+     .left_bar img{ max-width:90%;} 
+    
+     
+     .left_bar ul li{
+      line-height:1.1 !important;
+      padding-top: 30px;}
+
+      /* .left_bar ul {padding-left:0 !important; margin-left:0}   */
+      .left_bar ul {text-indent:0;}  
+      
+      .left_bar ul li a {width:60px !important;}  
+
+      .left_bar ul li a img{
+      width:0% !important; height:0% !important; visibility: hidden;}  
+    
+      /* for overflowing code */
+      .col-lg-.mx-auto{     
+        /* white-space: pre-wrap;  */
+        overflow: auto !important;
+         }
+    
+    
+
+       
 }
 
 </style>
@@ -1273,7 +1290,7 @@ a.anchor {
     <a href="https://alfaromartino.github.io"><img src="/blog/assets/icons/personal.png"
         style="width:18%; height:auto;opacity:0.9;margin-bottom:-14px; padding-right:4px">
       Personal
-      <div style="margin-left:calc(30px + 6px); margin-top:-0.5em;"> Website</div>
+      <div class="second_line"> Website</div>
     </a>
   </div>
 
@@ -1333,6 +1350,12 @@ color: white;
   left:12px;
   font-size:18px;
 }
+
+.left_bar .personal_website .second_line{
+  margin-left:calc(30px + 6px); 
+  margin-top:-0.5em;
+}
+
 </style>
 
 
@@ -1774,9 +1797,9 @@ r\left(q,p\right):=q\times p
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">p</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7777700000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span></span></span></span></span> <a id="eq3" class="anchor"></a><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mrow><mo fence="true">(</mo><mi>q</mi><mo fence="true">)</mo></mrow><mo>:</mo><mo>=</mo><mn>1.1</mn><mo>×</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">
 c\left(q\right):=1.1\times q
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">.</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span></span></span></span></span></p>
-<p>providing us with the profit <a id="eq4" class="anchor"></a><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mrow><mo fence="true">(</mo><mi>r</mi><mo separator="true">,</mo><mi>c</mi><mo fence="true">)</mo></mrow><mo>=</mo><mi>r</mi><mo>−</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">
-\pi\left(r,c\right)=r-c
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span></span></p>
+<p>providing us with the profit <a id="eq4" class="anchor"></a><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mrow><mo fence="true">(</mo><mi>r</mi><mo separator="true">,</mo><mi>c</mi><mo fence="true">)</mo></mrow><mo>:</mo><mo>=</mo><mi>r</mi><mo>−</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">
+\pi\left(r,c\right):=r-c
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span></span></p>
 <p>Our task at hand is to compute <span class="eqref">(<a href="#eq4">4</a>)</span>, with <span class="eqref">(<a href="#eq1">1</a>)</span>, <span class="eqref">(<a href="#eq2">2</a>)</span>, and <span class="eqref">(<a href="#eq3">3</a>)</span> as intermediate results we won&#39;t eventually need.</p>
 <p>      </div>
     </div>
@@ -2546,10 +2569,62 @@ document.onkeydown = function(evt) {
 
 </style>
 
+
+
+
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Poppins|Crimson+Text|Cardo|Ubuntu"></link> -->
+
+<style>
+
+
+@media (max-width: 768px) {
+     .franklin-content,.jumbotron, .bar_top, .navbar, .nav-item, .left_bar, .bar_top{
+        font-size:80% !important;}
+
+      h1 {font-size: 180%; padding-top:2em;}
+      h2, .lead {font-size: 110%;}
+
+     .bar_top, nav, .copy-button, .left_bar .personal_website, .py-1 .container .center-text{
+      visibility:hidden; width:0 !important;}  
+
+      /* for fixing overflowing code */
+      .col-lg-.mx-auto{     
+        /* white-space: pre-wrap;  */
+        overflow: auto !important;
+         }   
+          
     
+      .jumbotron {      
+        padding-left: 60px !important;
+        padding-right: 1% !important;}
 
 
+        .jumbotron{padding-top: 0; margin-top:0; }
+      
+        .franklin-content{
+         padding-left: 0 !important;}
+     
+     .left_bar{      
+      position:absolute;
+      top: 0 ;
+      left: 0 ;
+      height:auto;
+      background-image: none;}
+     
+     
 
+      /* .left_bar ul {padding-left:0 !important; margin-left:0}   */
+      .left_bar ul, .left_bar ul li {text-indent:0; padding-top:0.5em;padding-bottom:1.5em !important; height:auto;}
+      
+      .left_bar ul li a {width:60px !important;}  
+
+      .left_bar img{
+      width:0% !important; height:0% !important; visibility: hidden;}  
+    
+      
+}
+
+</style>
 
   
 <!-- COPY BUTTON -->

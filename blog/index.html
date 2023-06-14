@@ -885,7 +885,6 @@ margin-top: 0px;
 
 
 
-
   </style>  
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Poppins|Crimson+Text|Cardo|Ubuntu"></link> -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Crimson+Text"></link>
@@ -1180,27 +1179,45 @@ a.anchor {
 
 
 @media (max-width: 768px) {
-     .franklin-content,.jumbotron, .bar_top, .navbar, .nav-item, .left_bar, .bar_top {
+     .franklin-content,.jumbotron, .bar_top, .navbar, .nav-item, .left_bar, .bar_top{
         font-size:80% !important;}
 
-     .left_bar{width:100px !important;}  
+        h1, h2, .lead {font-size: 130%;}
 
-    .bar_top{left:0; margin-left:3%;padding-left:0;width:auto;
-      background-image: none !important; 
-      background-color:transparent;}  
+     .bar_top, nav, .copy-button, .left_bar .personal_website, .py-1 .container .center-text{
+      visibility:hidden; width:0;}  
 
-    .bar_top .modalButton {        
-      box-shadow: none !important;
-    }
-    .franklin-content, .jumbotron {      
-        padding-left: 100px !important;
-        padding-right: 3% !important;}
-      
-    .left_bar img{ max-width:40%;} 
-
-    nav{visibility:hidden;}  
-        
     
+    .franklin-content, .jumbotron {      
+        padding-left: 60px !important;
+        padding-right: 1% !important;}
+      
+    
+     .left_bar{width:60px !important;}
+     .left_bar img{ max-width:90%;} 
+    
+     
+     .left_bar ul li{
+      line-height:1.1 !important;
+      padding-top: 30px;}
+
+      /* .left_bar ul {padding-left:0 !important; margin-left:0}   */
+      .left_bar ul {text-indent:0;}  
+      
+      .left_bar ul li a {width:60px !important;}  
+
+      .left_bar ul li a img{
+      width:0% !important; height:0% !important; visibility: hidden;}  
+    
+      /* for overflowing code */
+      .col-lg-.mx-auto{     
+        /* white-space: pre-wrap;  */
+        overflow: auto !important;
+         }
+    
+    
+
+       
 }
 
 </style>
@@ -1264,7 +1281,7 @@ a.anchor {
     <a href="https://alfaromartino.github.io"><img src="/blog/assets/icons/personal.png"
         style="width:18%; height:auto;opacity:0.9;margin-bottom:-14px; padding-right:4px">
       Personal
-      <div style="margin-left:calc(30px + 6px); margin-top:-0.5em;"> Website</div>
+      <div class="second_line"> Website</div>
     </a>
   </div>
 
@@ -1324,6 +1341,12 @@ color: white;
   left:12px;
   font-size:18px;
 }
+
+.left_bar .personal_website .second_line{
+  margin-left:calc(30px + 6px); 
+  margin-top:-0.5em;
+}
+
 </style>
 
 
@@ -1484,20 +1507,23 @@ html{
   section{font-size: 16px;}  
 </style>
 
-<p> <div style="display:flex; align-items:left;"> <span style="text-decoration:underline;font-size:18px; display:inline-block; width: 190px;"><strong> ABOUT ME:</strong></span>  <blockquote style="margin-left: -60px;">Hi&#33; My name is <strong> Martin Alfaro</strong>. I&#39;m a <strong> PhD in Economics</strong>, currently working as an <strong> Associate Professor at University of Alberta (Canada)</strong>.  </blockquote></div></p>
-<p> <div style="display:flex; align-items:left;margin-top:-0.8em;">  <span style="text-decoration:underline;font-size:18px; display:inline-block; width: 134px;"><strong> TOPICS:</strong></span>  <blockquote style="margin-left: -4px;"> The blog is about:</p>
+<p>Welcome to my blog&#33; My name is <strong> Martin Alfaro</strong>. <br/> I&#39;m a <strong> PhD in Economics</strong>, currently working as an <strong> Associate Professor at University of Alberta (Canada)</strong>. <div style="padding-top:0.5em;"></div> This blog is about:</p>
 <div class="bullets"><ul>
 <li><p><strong> Economics</strong>: with a focus on companies&#39; strategies and international trade. <br/></p>
 </li>
-<li><p><strong> Programming</strong>: <a href="https://julialang.org/"><img src="assets/pics_html/julia_logo.svg" width="50px" height="auto"></a>, complemented with packages from <a href="https://www.python.org/"><img src="assets/pics_html/python_logo.png" width="100px" height="auto"></a> and <a href="https://www.r-project.org/"><img src="assets/pics_html/R_logo.png" width="30px" height="auto"></a>.</p>
+<li><p><strong> Programming</strong>: <a href="https://julialang.org/"><img src="/blog/assets/pics_html/julia_logo.svg" width="50px" height="auto"></a>, complemented with packages from <a href="https://www.python.org/"><img src="/blog/assets/pics_html/python_logo.png" width="100px" height="auto"></a> and <a href="https://www.r-project.org/"><img src="/blog/assets/pics_html/R_logo.png" width="30px" height="auto"></a>.</p>
 </li>
 <li><p><strong> Software and Technology</strong>: Anything I find worth sharing.</p>
 </li>
 </ul></div>
- </blockquote></div>
-<p> <div style="display:flex; align-items:left; margin-top:-1.4em;">  <span style="text-decoration:underline;font-size:18px; display:inline-block; width: 200px;"><strong> APPROACH:</strong></span>  <blockquote style="margin-left: 36px;"> I adopt an <strong> informal writing style</strong> to add a conversational tone to the content. When it comes to <strong> programming and software</strong>, the posts have a strong <strong> practical orientation</strong>. Some may eventually evolve into more comprehensive notes, which will be available <a href="alfaromartino.github.io/notes">here</a>. As for <strong> Economics</strong>, the posts are mainly <strong> preliminary advances of my research and teaching materials</strong>.  </blockquote></div></p>
-<p>Click on <a href="/blog/list_posts">ALL POSTS</a> to see the content. If you want to know <strong> why the logo is a dog</strong>, click  <a href="assets/pics_html/maluk.jpeg" target="_blank">here. </a><br/></p>
+<p> <span style="text-decoration:underline;font-size:18px;"><strong> APPROACH</strong></span> <br/> I adopt an <strong> informal writing style</strong> to add a conversational tone to the content. When it comes to <strong> programming and software</strong>, the posts have a strong <strong> practical orientation</strong>. Some may eventually evolve into more comprehensive notes, which will be available <a href="alfaromartino.github.io/notes">here</a>. As for <strong> Economics</strong>, the posts are mainly <strong> preliminary advances of my research and teaching materials</strong>.</p>
+<p><br/> Click on <a href="/blog/list_posts">ALL POSTS</a> to see the content. If you want to know <strong> why the logo is a dog</strong>, click  <a href="assets/pics_html/maluk.jpeg" target="_blank">here. </a><br/></p>
  <hr style="border-color:black">
+  <span style="color: rgb(73, 113, 153);"><strong> NEWS</strong></span>
+<div class="itemNoSpace"><ul>
+<li><p>New coding guide <strong> to draw heatmaps of world maps in Julia</strong>. Available on my personal website <a href="alfaromartino.github.io/notes">here</a>.</p>
+</li>
+</ul></div>
  </div>
 <p></p>
 
@@ -1920,7 +1946,59 @@ window.onkeydown = function(event) {
  <!-- FOR NAVIGATION-->
 
 
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Poppins|Crimson+Text|Cardo|Ubuntu"></link> -->
 
+<style>
+
+
+@media (max-width: 768px) {
+     .franklin-content,.jumbotron, .bar_top, .navbar, .nav-item, .left_bar, .bar_top{
+        font-size:80% !important;}
+
+      h1 {font-size: 180%; padding-top:2em;}
+      h2, .lead {font-size: 110%;}
+
+     .bar_top, nav, .copy-button, .left_bar .personal_website, .py-1 .container .center-text{
+      visibility:hidden; width:0 !important;}  
+
+      /* for fixing overflowing code */
+      .col-lg-.mx-auto{     
+        /* white-space: pre-wrap;  */
+        overflow: auto !important;
+         }   
+          
+    
+      .jumbotron {      
+        padding-left: 60px !important;
+        padding-right: 1% !important;}
+
+
+        .jumbotron{padding-top: 0; margin-top:0; }
+      
+        .franklin-content{
+         padding-left: 0 !important;}
+     
+     .left_bar{      
+      position:absolute;
+      top: 0 ;
+      left: 0 ;
+      height:auto;
+      background-image: none;}
+     
+     
+
+      /* .left_bar ul {padding-left:0 !important; margin-left:0}   */
+      .left_bar ul, .left_bar ul li {text-indent:0; padding-top:0.5em;padding-bottom:1.5em !important; height:auto;}
+      
+      .left_bar ul li a {width:60px !important;}  
+
+      .left_bar img{
+      width:0% !important; height:0% !important; visibility: hidden;}  
+    
+      
+}
+
+</style>
 
   
 <!-- COPY BUTTON -->
