@@ -1112,99 +1112,6 @@ a.anchor {
 
 
 
-/* @media (min-width: 768px) {
-  .container{  
-    max-width: 70% !important;
-    zoom: 100%;           
-  }
-  .franklin-content,.jumbotron, .bar_top, .navbar, .nav-item {
-    font-size: 19px;
-  } 
-} */
-
-
-
-
-
-
-
-
-/* @media (min-width: 50rem) {
-  .main-content-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-overflow-scrolling: touch;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-
-  .main-content {
-    position: relative;
-    max-width: 800px;
-    margin-left: 248px;
-  }
-}
-
-@media (min-width: 66.5rem) {
-  .main-content {
-    margin-left: calc((100% - 1064px) / 2 + 264px);
-  }
-}
-
-@media (min-width: 50rem) {
-  .main-header {
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
-}
-
-@media (min-width: 50rem) {
-  .main-header {
-    display: flex;
-    justify-content: flex-end;
-    height: 60px;
-    background-color: #fff;
-    border-bottom: 1px solid #eeebee;
-  }
-}
-
-@media (min-width: 50rem) {
-  .franklin-content {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-} */
-
-
-
-@media (max-width: 768px) {
-     .franklin-content,.jumbotron, .bar_top, .navbar, .nav-item, .left_bar, .bar_top {
-        font-size:80% !important;}
-
-     .left_bar{width:100px !important;}  
-
-    .bar_top{left:0; margin-left:3%;padding-left:0;width:auto;
-      background-image: none !important; 
-      background-color:transparent;}  
-
-    .bar_top .modalButton {        
-      box-shadow: none !important;
-    }
-    .franklin-content, .jumbotron {      
-        padding-left: 100px !important;
-        padding-right: 3% !important;}
-      
-    .left_bar img{ max-width:40%;} 
-
-    nav{visibility:hidden;}  
-        
-    
-}
 
 </style>
 
@@ -1214,15 +1121,9 @@ a.anchor {
       style="margin-left:-10px; float:left;" width="180px" height=auto>
 </span>
 
-<div style="color: rgb(63,99,136);
-    font-size: 20px;
-    font-weight: bold;    
-    text-align: center;
-    margin-left: -10px; /* equal to the padding right below */    
-    text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff, 0px 0px 5px  #fff;">
-    DATA
-  </div>
-
+<div class="left_subtitle">
+  DATA
+</div>
 
   <ul>
     <li>
@@ -1265,7 +1166,11 @@ a.anchor {
   <a class="github-button" href="https://github.com/{{github_repo}}" data-icon="octicon-star" data-size="large" 
   data-show-count="true" aria-label="Star {{title}} on GitHub">Star</a>
   {{end}}       -->
-  
+
+
+  <!-- {{isnotpage index}}
+    <div class="backbutton">    <a href="/datasets/index.html">Back</a>   </div>
+  {{end}} -->
 
   </div>
 
@@ -1287,7 +1192,14 @@ a.anchor {
   width: 180px;
 }
 
-
+.left_bar .left_subtitle{
+    color: rgb(63,99,136);
+    font-size: 20px;
+    font-weight: bold;    
+    text-align: center;
+    margin-left: -10px; /* equal to the padding right below */    
+    text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff, 0px 0px 5px  #fff;
+}
 
 .left_bar ul{
 list-style-type: none;
@@ -1459,8 +1371,8 @@ html{background-color: #cdd6e0;}
   line-height: 1.65;    
   padding-left:10%;
   padding-right:10%;
-  margin-top:-20px;
-  padding-top:40px;  
+  margin-top:-1.1em;
+  padding-top:2em;    
   background-color: #cdd6e0;  
   } 
 
@@ -1474,10 +1386,10 @@ html{background-color: #cdd6e0;}
   
 </style>
 
-<p> <div class="index_container"> <br/> These are datasets I assembled or cleaned for their use. </p>
-<p>Press <strong> on the title</strong> to download the dataset, and <strong> on Details</strong> for further information. If you want to open and close all the details simultaneously, press  <kbd> Ctrl + 🠙</kbd> and  <kbd> Ctrl + 🠛</kbd> respectively. <br/> <br/></p>
+<p> <div class="index_container"> These are datasets I assembled or cleaned for their use. </p>
+<p>Press <strong> on the title</strong> to download the dataset, and <strong> on Details</strong> for further information. If you want to open and close all the details simultaneously, press  <kbd> Ctrl + 🠙</kbd> and  <kbd> Ctrl + 🠛</kbd> respectively. <br/> </p>
 <div class="bullets"><ul>
-<li><p><a href="https://alfaromartino.github.io/data/countries_mapCoordinates.csv">World Coordinates for Heatmaps</a>  <div class="divsummary" style="margin-top:-0.0em; line-height:1.55;"><details closed><summary>Details  </summary>  <p>     For a full description of the dataset, see <a href="https://alfaromartino.github.io/coding/PAGES/01_heatmaps_world">HERE</a>.     The estimates are in CSV format and can be downloaded <a href="https://alfaromartino.github.io/data/countries_mapCoordinates.csv">HERE</a>. The description of variables is provided in this <a href="/datasets/assets/PAGES/01_nace4europe/readme.txt">README.txt</a>.The information covers the years 2012-2019. <br/> <br/></p>
+<li><p><a href="https://alfaromartino.github.io/data/countries_mapCoordinates.csv">World Coordinates for Heatmaps</a>  <div class="divsummary" style="margin-top:-0.0em; line-height:1.55;"><details closed><summary>Details  </summary>  <p>     For a full description of the dataset, see <a href="https://alfaromartino.github.io/coding/PAGES/01_heatmaps_world/">HERE</a>.     The estimates are in CSV format and can be downloaded <a href="https://alfaromartino.github.io/data/countries_mapCoordinates.csv">HERE</a>. The description of variables is provided in this <a href="/datasets/assets/PAGES/01_nace4europe/readme.txt">README.txt</a>.The information covers the years 2012-2019. <br/> <br/></p>
  <div class=" code_box"> <details  open><summary> Julia  </summary> <div class="code_inline"><div class="code_NoFormat"></p>
 <pre><code class="language-julia">using CSV, Downloads, DataFrames
 
@@ -1491,7 +1403,7 @@ worldcoordinates &#61; &quot;https://alfaromartino.github.io/data/countries_mapC
 <pre><code class="language-python">import pandas as pd
 
 worldcoordinates &#61; pd.read_csv&#40;&quot;https://alfaromartino.github.io/data/countries_mapCoordinates.csv&quot;&#41;</code></pre>
-<p></div> </div>  </details></div>  </p></details></div><br> </p>
+<p></div> </div>  </details></div>  </p></details></div> </p>
 </li>
 </ul>
 <ul>
@@ -1509,7 +1421,7 @@ dataset &#61; &quot;https://alfaromartino.github.io/data/RevenueManufacture_NACE
 <pre><code class="language-python">import pandas as pd
 
 dataset &#61; pd.read_csv&#40;&quot;https://alfaromartino.github.io/data/RevenueManufacture_NACE4.csv&quot;&#41;</code></pre>
-<p></div> </div>  </details></div>  </p></details></div><br></p>
+<p></div> </div>  </details></div>  </p></details></div></p>
 </li>
 </ul></div>
 <br/>
@@ -2009,3 +1921,66 @@ window.onkeydown = function(event) {
     })();
     </script>
 
+
+
+<style>
+
+
+  @media (max-width: 768px) {
+       .franklin-content,.jumbotron, .left_bar{
+          font-size:80% ;}
+  
+        h1 {font-size: 180%; padding-top:1.5em;padding-bottom:0.5em;}
+  
+        .jumbotron{padding-top: 0; margin-top:0; padding-bottom:3em;  }
+        h2, .lead {font-size: 110%;padding-top: 0.5em;}
+  
+       .bar_top, nav, .copy-button, .left_bar .personal_website, .py-1 .container .center-text, .left_subtitle{
+        visibility:hidden; width:0 !important; height:0 !important}  
+  
+        /* for fixing overflowing code */
+        .col-lg-.mx-auto{     
+          /* white-space: pre-wrap;  */
+          overflow: auto !important;
+           }   
+            
+        .index_container{
+          font-size:100%;
+          padding-left:1%;
+          padding-right:1%;
+        }
+  
+        .index_container .itemNoSpace ul, .index_container .bullets ul{
+          padding-left:1%;
+          padding-right:1%;        
+          margin:1%;
+        }
+        
+                
+        .franklin-content{
+           padding-left: 0 !important;}
+         
+  
+       .left_bar{      
+        position:absolute;
+        top: 0 ;
+        left: 0 ;
+        height:auto;
+        background-image: none;
+        width:100px !important;
+        padding:0;
+        }
+       
+                   
+        .left_bar ul, .left_bar ul li, .left_bar ul li a { padding:0 !important; height:2.8em;}
+        
+        
+        
+  
+        .left_bar img, .left_bar ul li a img{
+        width:0% !important; height:0% !important; visibility: hidden;}  
+      
+        
+  }
+  
+  </style>
