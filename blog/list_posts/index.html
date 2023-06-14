@@ -1366,11 +1366,7 @@ h1  {font-family: "Crimson Text"; }
 
 
 /* TITLE AND NAME */
-h1{
-  padding-top:0.0em;
-  font-size:250% !important;
-  text-align:center;  
-}
+
 
 .name_format{    
   padding-top: 0.2em;
@@ -1392,6 +1388,11 @@ h1{
 
   
 
+
+.phd_format{margin-bottom:-1.2em;}
+
+
+
   .name_format a { color: white; }
   .name_format a:hover {
     color: rgb(212, 212, 212);
@@ -1401,9 +1402,15 @@ h1{
 
 
 /* TITLE AND NAME */
-h1{  margin-top:-0.18em;  }
 
-h1{   font-size:280% !important;  }
+h1{
+  margin-top:-0.17em;
+  font-size:280% !important;  
+  text-align:center;  
+}
+
+
+
 
 
 .lead {padding-top:0.34em; padding-bottom:0.1em; font-size:175%;}
@@ -1411,7 +1418,7 @@ h1{   font-size:280% !important;  }
 
 
 
-.phd_format{margin-bottom:-1.2em;}
+
 
 .franklin-content, html, section .column{
   background-color: rgb(217, 224, 231);
@@ -1935,14 +1942,23 @@ window.onkeydown = function(event) {
 
 
 @media (max-width: 768px) {
-     .franklin-content,.jumbotron, .bar_top, .navbar, .nav-item, .left_bar, .bar_top{
+     .franklin-content,.jumbotron, .left_bar{
         font-size:80% !important;}
 
-      h1 {font-size: 180%; padding-top:2em;}
-      h2, .lead {font-size: 110%;}
+      .index_container,  .index_container section{font-size: 100%;}
+      
+
+      .index_container{
+        padding-left:1%;
+        padding-right:1%;              
+      }
+
+      h1 {font-size: 180%; padding-top:0.5em ;padding-bottom:0em; }
+      h2, .lead {font-size: 110%; }
+      .lead {padding-top:0em;padding-bottom: 1em;}
 
      .bar_top, nav, .copy-button, .left_bar .personal_website, .py-1 .container .center-text{
-      visibility:hidden; width:0 !important;}  
+      visibility:hidden; width:0 !important; height:0 !important}  
 
       /* for fixing overflowing code */
       .col-lg-.mx-auto{     
@@ -1953,10 +1969,11 @@ window.onkeydown = function(event) {
     
       .jumbotron {      
         padding-left: 60px !important;
-        padding-right: 1% !important;}
+        padding-right: 1% !important;
+        padding-top: 0; margin-top:0;}
 
 
-        .jumbotron{padding-top: 0; margin-top:0; }
+        
       
         .franklin-content{
          padding-left: 0 !important;}
