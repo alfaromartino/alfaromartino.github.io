@@ -952,54 +952,6 @@ h1  {font-family: "Inter"}
         padding-left: 10px;
     }
 
-/* @media screen and (min-width: 992px) {
-  html {  
-    zoom: 100%;
-    width:100%;
-  }
-} */
-
-
-/* .jumbotron.jumbotron-fluid.container-fluid.bg-primary{
-  background-image: url(/assets/WallpaperDog-17291225.jpg);
-  background-size: cover;  
-} */
-
-/* FOR THE BODY - this changes its position*/
-/* .franklin-content {   
-  position:absolute;
-  margin-left: 0px; 
-  padding-top:0;}  */
-
-
-/* ALL 
-.franklin-content,.jumbotron, .bar_top, .navbar, .nav-item {
-  font-family: "Segoe UI"; FONT USED by DEFAULT  BY FRANKLIN 
-} */
-
-/* HEADER + NAME
-  .jumbotron, h1{
-  font-family: "Raleway"; 
-  font-weight: 550;  
-} */
-
-/* ALL HEADER - title of page */
-/* .jumbotron {
-  text-align:left;
-  padding-left:20px;
-} */
-
-
-/* HEADER only - title of page */
-/* h1 {
-  text-align:left;
-} */
-
-/* FORMAT OF THE TEXT IN THE MAIN BODY */
-/* section .container{
-  margin-left: auto;  
-} */
-
 
 
 h2 {
@@ -1157,31 +1109,6 @@ a.anchor {
       font-size:80%}
 
 
-
-@media (max-width: 768px) {
-     .franklin-content,.jumbotron, .bar_top, .navbar, .nav-item, .left_bar, .bar_top {
-        font-size:80% !important;}
-
-     .left_bar{width:100px !important;}  
-
-    .bar_top{left:0; margin-left:3%;padding-left:0;width:auto;
-      background-image: none !important; 
-      background-color:transparent;}  
-
-    .bar_top .modalButton {        
-      box-shadow: none !important;
-    }
-    .franklin-content, .jumbotron {      
-        padding-left: 100px !important;
-        padding-right: 3% !important;}
-      
-    .left_bar img{ max-width:40%;} 
-
-    nav{visibility:hidden;}  
-        
-    
-}
-
 </style>
 
 <div class="left_bar" style="color:white;">
@@ -1190,14 +1117,9 @@ a.anchor {
       style="margin-left:-10px; float:left;" width="180px" height=auto>
 </span>
 
-<div style="color: rgb(63,99,136);
-    font-size: 20px;
-    font-weight: bold;    
-    text-align: center;
-    margin-left: -10px; /* equal to the padding right below */    
-    text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff, 0px 0px 5px  #fff;">
-    BOOKS & NOTES
-  </div>
+<div class="left_subtitle">
+  BOOKS & NOTES
+</div>
 
 
   <ul>
@@ -1241,7 +1163,11 @@ a.anchor {
   <a class="github-button" href="https://github.com/{{github_repo}}" data-icon="octicon-star" data-size="large" 
   data-show-count="true" aria-label="Star {{title}} on GitHub">Star</a>
   {{end}}       -->
-  
+
+
+  <!-- {{isnotpage index}}
+    <div class="backbutton">    <a href="/books/index.html">Back</a>   </div>
+  {{end}} -->
 
   </div>
 
@@ -1263,6 +1189,14 @@ a.anchor {
   width: 180px;
 }
 
+.left_bar .left_subtitle{
+    color: rgb(63,99,136);
+    font-size: 20px;
+    font-weight: bold;    
+    text-align: center;
+    margin-left: -10px; /* equal to the padding right below */    
+    text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff, 0px 0px 5px  #fff;
+}
 
 
 .left_bar ul{
@@ -1422,8 +1356,7 @@ section{
 
 
 
-<div class="franklin-content">
-
+<div class="franklin-content"><p> 
 <style>
 html{background-color: #cdd6e0;}
 
@@ -1435,18 +1368,13 @@ html{background-color: #cdd6e0;}
   line-height: 1.65;    
   padding-left:10%;
   padding-right:10%;
-  margin-top:-20px;
-  padding-top:40px;  
+  margin-top:-1.1em;
+  padding-top:2em;    
   background-color: #cdd6e0;  
   } 
-
-  
-  
-  
 </style>
-
+</p>
 <p> <div class="index_container"> Here, you&#39;ll find a series of teaching materials that I&#39;ve developed over years. <strong> A (free) online book on Julia is coming soon!</strong>.</p>
-<p><br/> <br/></p>
  <h2> Teaching Material </h2>
 <div class="itemNoSpace"><ul>
 <li><p><a href="/books/assets/micro/microUndergrads_ALFARO.pdf"><strong> Microeconomics - Advanced Undergraduate Course</strong></a>.  Notes used for a course.</p>
@@ -1956,3 +1884,67 @@ window.onkeydown = function(event) {
     })();
     </script>
 
+
+
+<style>
+
+
+@media (max-width: 850px), (max-height: 600px)  {
+     .franklin-content,.jumbotron, .left_bar{
+        font-size:80% ;}
+
+        h1 {font-size: 180%; padding-top:1.5em;padding-bottom:1.5em;}
+  
+  .jumbotron{padding-top: 0; margin-top:0; padding-bottom:4em;  
+    padding-left: 100px !important;
+    padding-right: 3% !important;} 
+
+  h2, .lead {font-size: 110%;padding-top: 0em;}
+
+     .bar_top, nav, .copy-button, .left_bar .personal_website, .py-1 .container .center-text, .left_subtitle{
+      visibility:hidden; width:0 !important; height:0 !important}  
+
+      /* for fixing overflowing code */
+      .col-lg-.mx-auto{     
+        /* white-space: pre-wrap;  */
+        overflow: auto !important;
+         }   
+          
+      .index_container{
+        font-size:100%;
+        padding-left:1%;
+        padding-right:1%;        
+      }
+
+      .itemNoSpace ul, section {
+        padding:1% !important;
+      }
+      
+      
+        .franklin-content{
+         padding-left: 0 !important;}
+     
+
+              
+
+
+     .left_bar{      
+      position:absolute;
+      top: 0 ;
+      left: 0 ;
+      height:auto;
+      background-image: none;
+      width:100px !important;
+      padding:0;
+      }
+     
+                 
+      .left_bar ul, .left_bar ul li, .left_bar ul li a { padding:0 !important; height:3.2em; font-size:96%}
+      
+      .left_bar img, .left_bar ul li a img{
+      width:0% !important; height:0% !important; visibility: hidden;}  
+}
+
+
+
+</style>

@@ -10,7 +10,7 @@
 .bullets ul { 
   margin-left: 0em;
   line-height: 1.15;
-  padding-top: 8px;}
+  padding-top: 1em;}
   
 
 .bullets ul li p { 
@@ -20,7 +20,8 @@
 
 .bullets ul li { 
     margin-left: 12px;
-    line-height: 1.15; }
+    line-height: 1.15; 
+    padding-bottom: 1em;}
 
 
 /* VERSION 2 */
@@ -530,85 +531,3 @@ section .modalButton {
   font-size:100%;
   line-height: 1.45;
 }
-
-
-
-
-
-
-
-
-
-  /*===============================  */
-/*        CAROUSEL for IMG         */
-/*===============================  */
-/* .for_img .carousel {
-  position:relative;
-  padding-bottom: 50px;  
-  padding-top: 50px;  
-}
-
-.for_img .carousel .carousel-indicators li {background-color: rgba(0, 0, 0, 0.493);}
-.for_img .carousel .carousel-indicators li.active {background-color: black;}
-.for_img .carousel .carousel-indicators {
-  position: absolute;
-  bottom: -5px;  
-}
-.for_img .carousel-control-next-icon {
-  background-image: url(/assets/carousel-arrow-next.svg); background-size: contains; 
-  width: 70px;  height: 70px;
-  position: absolute;
-  bottom: -5px;  
-  left: -25%;}
-.for_img .carousel-control-prev-icon {
-  background-image: url(/assets/carousel-arrow-prev.svg); background-size: contains; 
-  width: 70px;  height: 70px;
-  position: absolute;
-  bottom: -5px;  
-  right: -25%;}
-
-.for_img .carousel-item img {
-  object-fit: contain;
-  height:100px;
-  overflow: hidden;  
-      }
-.for_img .carousel-item .d-block{
-  margin:auto;}
- */
-
-/*===============================  */
-/*        CAROUSEL for CODE        */
-/*===============================  */
-/* .for_code .carousel {
-  position:relative;
-  padding-bottom: 30px;  
-  padding-top: 70px;  
-  bottom:40px;
-}
-
-.for_code .carousel .carousel-indicators li {background-color: rgba(0, 0, 0, 0.493);}
-.for_code .carousel .carousel-indicators li.active {background-color: black;}
-.for_code .carousel .carousel-indicators {
-  position: absolute;
-  bottom: -5px;    
-}
-.for_code .carousel-control-next-icon {
-  background-image: url(/assets/carousel-arrow-next.svg); background-size: contains; 
-  width: 70px;  height: 70px;
-  position: absolute;
-  bottom: -5px;  
-  left: -25%;}
-.for_code .carousel-control-prev-icon {
-  background-image: url(/assets/carousel-arrow-prev.svg); background-size: contains; 
-  width: 70px;  height: 70px;
-  position: absolute;
-  bottom: -5px;  
-  right: -25%;}
-
-.for_code .carousel-item img {
-  object-fit: contain;
-  height:100px;
-  overflow: hidden;  
-      }
-.for_code .carousel-item .d-block{
-  margin:auto;} */

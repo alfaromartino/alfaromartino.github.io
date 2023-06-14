@@ -955,54 +955,6 @@ h1  {font-family: "Inter"}
         padding-left: 10px;
     }
 
-/* @media screen and (min-width: 992px) {
-  html {  
-    zoom: 100%;
-    width:100%;
-  }
-} */
-
-
-/* .jumbotron.jumbotron-fluid.container-fluid.bg-primary{
-  background-image: url(/assets/WallpaperDog-17291225.jpg);
-  background-size: cover;  
-} */
-
-/* FOR THE BODY - this changes its position*/
-/* .franklin-content {   
-  position:absolute;
-  margin-left: 0px; 
-  padding-top:0;}  */
-
-
-/* ALL 
-.franklin-content,.jumbotron, .bar_top, .navbar, .nav-item {
-  font-family: "Segoe UI"; FONT USED by DEFAULT  BY FRANKLIN 
-} */
-
-/* HEADER + NAME
-  .jumbotron, h1{
-  font-family: "Raleway"; 
-  font-weight: 550;  
-} */
-
-/* ALL HEADER - title of page */
-/* .jumbotron {
-  text-align:left;
-  padding-left:20px;
-} */
-
-
-/* HEADER only - title of page */
-/* h1 {
-  text-align:left;
-} */
-
-/* FORMAT OF THE TEXT IN THE MAIN BODY */
-/* section .container{
-  margin-left: auto;  
-} */
-
 
 
 h2 {
@@ -1114,9 +1066,7 @@ a.anchor {
 
 /* FOR ABSTRACT OF PAPERS */
 .papersDetails details > summary {    
-  list-style: none;  
   cursor: pointer;
-  list-style: none;  
   padding-bottom:0em;
 }
 
@@ -1125,15 +1075,13 @@ a.anchor {
 }
 
 .papersDetails p {
-  padding-bottom:1em;
-  
+  padding-bottom:1em;  
 }
 
+
 /* FOR ABSTRACT OF PAPERS */
-.descriptionData details > summary {    
-  list-style: none;  
-  cursor: pointer;
-  list-style: none;  
+.descriptionData details > summary {      
+  cursor: pointer;  
   padding-bottom:0em;
 }
 
@@ -1160,31 +1108,6 @@ a.anchor {
       font-size:80%}
 
 
-
-@media (max-width: 768px) {
-     .franklin-content,.jumbotron, .bar_top, .navbar, .nav-item, .left_bar, .bar_top {
-        font-size:80% !important;}
-
-     .left_bar{width:100px !important;}  
-
-    .bar_top{left:0; margin-left:3%;padding-left:0;width:auto;
-      background-image: none !important; 
-      background-color:transparent;}  
-
-    .bar_top .modalButton {        
-      box-shadow: none !important;
-    }
-    .franklin-content, .jumbotron {      
-        padding-left: 100px !important;
-        padding-right: 3% !important;}
-      
-    .left_bar img{ max-width:40%;} 
-
-    nav{visibility:hidden;}  
-        
-    
-}
-
 </style>
 
 <div class="left_bar" style="color:white;">
@@ -1193,15 +1116,9 @@ a.anchor {
       style="margin-left:-10px; float:left;" width="180px" height=auto>
 </span>
 
-<div style="color: rgb(63,99,136);
-    font-size: 20px;
-    font-weight: bold;    
-    text-align: center;
-    margin-left: -10px; /* equal to the padding right below */    
-    text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff, 0px 0px 5px  #fff;">
-    RESEARCH
-  </div>
-
+<div class="left_subtitle">
+  RESEARCH
+</div>
 
   <ul>
     <li>
@@ -1244,7 +1161,11 @@ a.anchor {
   <a class="github-button" href="https://github.com/{{github_repo}}" data-icon="octicon-star" data-size="large" 
   data-show-count="true" aria-label="Star {{title}} on GitHub">Star</a>
   {{end}}       -->
-  
+
+
+  <!-- {{isnotpage index}}
+    <div class="backbutton">    <a href="/research/index.html">Back</a>   </div>
+  {{end}} -->
 
   </div>
 
@@ -1266,6 +1187,14 @@ a.anchor {
   width: 180px;
 }
 
+.left_bar .left_subtitle{
+    color: rgb(63,99,136);
+    font-size: 20px;
+    font-weight: bold;    
+    text-align: center;
+    margin-left: -10px; /* equal to the padding right below */    
+    text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff, 0px 0px 5px  #fff;
+}
 
 
 .left_bar ul{
@@ -1438,58 +1367,54 @@ html{background-color: #cdd6e0;}
   line-height: 1.65;    
   padding-left:10%;
   padding-right:10%;
-  margin-top:-20px;
-  padding-top:40px;  
+  margin-top:-1.1em;
+  padding-top:2em;  
   background-color: #cdd6e0;  
   } 
 
-  .index_container ul {
-      list-style-type: none;     
-  }
   
   .index_container ul li{
-      padding-bottom: 0.5em;
+      padding-bottom: 1.5em;
   }
   
 </style>
 
  <div class="index_container">
-<p><br/> These are the last working-paper versions of my published papers. <br/> Press on the title to access the paper, and on  <em> Abstract</em> to display a summary of the paper. If you want to open and close all abstracts simultaneously, press  <kbd> Ctrl + 🠙</kbd> and  <kbd> Ctrl + 🠛</kbd> respectively. <br/> <br/></p>
- <h2> Articles </h2>
+<p>These are the last working-paper versions of my published papers. <br/> Press on the title to access the paper, and on  <em> Abstract</em> to display a summary of the paper. If you want to open and close all abstracts simultaneously, press  <kbd> Ctrl + 🠙</kbd> and  <kbd> Ctrl + 🠛</kbd> respectively. <br/>  <h2> Articles </h2></p>
 <div class="bullets"><ul>
-<li><p><a href="/research/assets/articles/ALFARO-MicroecNewTrade.pdf">The Microeconomics of New Trade Models</a> &#40;2022&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     International trade can increase product market competition and hence be pro-competitive. Is this feature captured in New Trade Models? I study this question in a setting with firm heterogeneity à la Melitz, under any productivity distribution and standard demands &#40;e.g., demands from an additively separable utility, linear, translog, Logit&#41;. My results indicate that better export opportunities are pro-competitive: they reduce the domestic firms’ markups and induce the exit of the least productive domestic firms. But, surprisingly, tougher import competition is completely offset by a reduction in the mass of domestic incumbents, leaving the competitive environment unaffected. Thus, it does not impact the prices, quantities, or survival productivity cutoff of domestic firms. Consistent with previous studies, I also find that a reduction in import trade costs under two large countries and two-way trade always decreases competition. I show that this outcome can be rationalized as capturing worse export conditions exclusively.  </p></details></div><br></p>
+<li><p><a href="/research/assets/articles/ALFARO-MicroecNewTrade.pdf">The Microeconomics of New Trade Models</a> &#40;2022&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     International trade can increase product market competition and hence be pro-competitive. Is this feature captured in New Trade Models? I study this question in a setting with firm heterogeneity à la Melitz, under any productivity distribution and standard demands &#40;e.g., demands from an additively separable utility, linear, translog, Logit&#41;. My results indicate that better export opportunities are pro-competitive: they reduce the domestic firms’ markups and induce the exit of the least productive domestic firms. But, surprisingly, tougher import competition is completely offset by a reduction in the mass of domestic incumbents, leaving the competitive environment unaffected. Thus, it does not impact the prices, quantities, or survival productivity cutoff of domestic firms. Consistent with previous studies, I also find that a reduction in import trade costs under two large countries and two-way trade always decreases competition. I show that this outcome can be rationalized as capturing worse export conditions exclusively.  </p></details></div></p>
 </li>
 </ul>
 <ul>
-<li><p><a href="/research/assets/articles/AW-SmallCountry.pdf">Export Conditions in Small Countries and their Effects on Domestic Markets</a> &#40;2022&#41;<br/>with  <span class="coauthor"><a href="https://sites.google.com/site/fredericwarzynski/research">Frederic Warzynski</a></span>  <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     In a small country’s industries, it is common that both small and large firms export a significant share of their total production. How does better export access affect the domestic market when this occurs? Incorporating investments in quality that require fixed outlays and increase a variety’s appeal in all countries, we show that an export shock entails two opposing mechanisms. On the one hand, it induces quality upgrades that raise the domestic market share of large firms. On the other hand, it fosters entry of small firms, making large firms lose domestic market share and downgrade quality. Using Danish data, we show that small firms in some industries are so heavily export-oriented that better export opportunities reallocate domestic market share towards the least productive domestic firms. And while competition by small firms reduces some large firms’ domestic markups, it also leads some to downgrade quality and suffer a substantial fall in profits.  </p></details></div><br></p>
+<li><p><a href="/research/assets/articles/AW-SmallCountry.pdf">Export Conditions in Small Countries and their Effects on Domestic Markets</a> &#40;2022&#41;<br/>with  <span class="coauthor"><a href="https://sites.google.com/site/fredericwarzynski/research">Frederic Warzynski</a></span>  <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     In a small country’s industries, it is common that both small and large firms export a significant share of their total production. How does better export access affect the domestic market when this occurs? Incorporating investments in quality that require fixed outlays and increase a variety’s appeal in all countries, we show that an export shock entails two opposing mechanisms. On the one hand, it induces quality upgrades that raise the domestic market share of large firms. On the other hand, it fosters entry of small firms, making large firms lose domestic market share and downgrade quality. Using Danish data, we show that small firms in some industries are so heavily export-oriented that better export opportunities reallocate domestic market share towards the least productive domestic firms. And while competition by small firms reduces some large firms’ domestic markups, it also leads some to downgrade quality and suffer a substantial fall in profits.  </p></details></div></p>
 </li>
 </ul>
 <ul>
-<li><p><a href="/research/assets/articles/AW-GranularTrade.pdf">Trade Liberalization with Granular Firms</a> &#40;2021&#41;<br/>with  <span class="coauthor"><a href="https://sites.google.com/site/fredericwarzynski/research">Frederic Warzynski</a></span>  <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     Relying on rich firm-product Danish data, we document that the bulk of manufacturing revenue comes from industries where large firms and numerous insignificant firms coexist. Given the importance of this market structure in the aggregate, we study its implications for gains of trade by embedding a set of oligopolistic firms into a monopolistic-competition model. In this setting, the idiosyncratic features of large firms become crucial for gains of trade, given the granular importance of their profits for aggregate income. In particular, gains of trade are negatively affected when a large firm has a pronounced home bias, since trade liberalization reduces its profit by increasing domestic competition. A calibration for Denmark reflects this feature: trade liberalization raises the profits of almost all large firms, but the fall in profit of one large firm almost completely offsets the gains in income from the profit channel.  </p></details></div><br></p>
+<li><p><a href="/research/assets/articles/AW-GranularTrade.pdf">Trade Liberalization with Granular Firms</a> &#40;2021&#41;<br/>with  <span class="coauthor"><a href="https://sites.google.com/site/fredericwarzynski/research">Frederic Warzynski</a></span>  <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     Relying on rich firm-product Danish data, we document that the bulk of manufacturing revenue comes from industries where large firms and numerous insignificant firms coexist. Given the importance of this market structure in the aggregate, we study its implications for gains of trade by embedding a set of oligopolistic firms into a monopolistic-competition model. In this setting, the idiosyncratic features of large firms become crucial for gains of trade, given the granular importance of their profits for aggregate income. In particular, gains of trade are negatively affected when a large firm has a pronounced home bias, since trade liberalization reduces its profit by increasing domestic competition. A calibration for Denmark reflects this feature: trade liberalization raises the profits of almost all large firms, but the fall in profit of one large firm almost completely offsets the gains in income from the profit channel.  </p></details></div></p>
 </li>
 </ul>
 <ul>
-<li><p><a href="/research/assets/articles/ALFARO-beer.pdf">Beer Leaders Against Craft Brewers: Will Goliath End Up Defeating David in the US?</a> &#40;2021&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     The last decade has witnessed an unprecedented rise of craft brewers in the American beer industry, with market leaders actively seeking to hamper their growth. In this paper, we set a model with craft brewers and macrobrewers, where leading firms engage in strategic moves to shape market outcomes. The framework results in leaders strategically targeting craft brewers to disadvantage them, and hence crowd them out. On the contrary, non-leading macrobrewers are neither targeted nor hurt. A calibration for the American beer industry in 2019 shows that, even though the emergence of craft brewers in the last years has hurt leaders, strategic moves have allowed them to mitigate its consequences. Specifically, these moves have respectively enabled AB InBev and Molson Coors to prevent further losses of market share of 5.1 and 2.8 points, implying that the craft brewers’ market share would have been even 7.9 points higher in the absence of strategic moves.  </p></details></div><br></p>
+<li><p><a href="/research/assets/articles/ALFARO-beer.pdf">Beer Leaders Against Craft Brewers: Will Goliath End Up Defeating David in the US?</a> &#40;2021&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     The last decade has witnessed an unprecedented rise of craft brewers in the American beer industry, with market leaders actively seeking to hamper their growth. In this paper, we set a model with craft brewers and macrobrewers, where leading firms engage in strategic moves to shape market outcomes. The framework results in leaders strategically targeting craft brewers to disadvantage them, and hence crowd them out. On the contrary, non-leading macrobrewers are neither targeted nor hurt. A calibration for the American beer industry in 2019 shows that, even though the emergence of craft brewers in the last years has hurt leaders, strategic moves have allowed them to mitigate its consequences. Specifically, these moves have respectively enabled AB InBev and Molson Coors to prevent further losses of market share of 5.1 and 2.8 points, implying that the craft brewers’ market share would have been even 7.9 points higher in the absence of strategic moves.  </p></details></div></p>
 </li>
 </ul>
 <ul>
-<li><p><a href="/research/assets/articles/AL-overinvest.pdf">Restricting Entry without Aggressive Pricing</a> &#40;2021&#41;<br/>with  <span class="coauthor"><a href="https://dlecon.github.io/">David Lander</a></span> <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     This paper studies a strategic-investment model under endogenous entry of followers. We extend the standard setting à la Etro by incorporating multiple heterogeneous leaders and demand-enhancing investments directly affecting competition. Our findings indicate that all leaders simultaneously restrict entry without harming each other. Moreover, while entry accommodation never arises, a wide range of strategies is consistent with aggressive behavior, including quality upgrades exclusively targeted to high-valuation consumers. By using the tools of aggregative games, we provide conditions over demand primitives to identify when a leader over-invests and whether it &#40;i&#41; raises or lowers its price, &#40;ii&#41; increases or decreases its revenue, and &#40;iii&#41; supplies greater or lower quantities. We illustrate the results by completely characterizing outcomes under the Logit and CES demands.  </p></details></div><br></p>
+<li><p><a href="/research/assets/articles/AL-overinvest.pdf">Restricting Entry without Aggressive Pricing</a> &#40;2021&#41;<br/>with  <span class="coauthor"><a href="https://dlecon.github.io/">David Lander</a></span> <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     This paper studies a strategic-investment model under endogenous entry of followers. We extend the standard setting à la Etro by incorporating multiple heterogeneous leaders and demand-enhancing investments directly affecting competition. Our findings indicate that all leaders simultaneously restrict entry without harming each other. Moreover, while entry accommodation never arises, a wide range of strategies is consistent with aggressive behavior, including quality upgrades exclusively targeted to high-valuation consumers. By using the tools of aggregative games, we provide conditions over demand primitives to identify when a leader over-invests and whether it &#40;i&#41; raises or lowers its price, &#40;ii&#41; increases or decreases its revenue, and &#40;iii&#41; supplies greater or lower quantities. We illustrate the results by completely characterizing outcomes under the Logit and CES demands.  </p></details></div></p>
 </li>
 </ul>
 <ul>
-<li><p><a href="/research/assets/articles/ALFARO-trade_with_leaders.pdf">Assessing Gains of Trade in Monopolistic Competition Under Presence of Industry Leaders</a> &#40;2021&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     A recent literature has documented a widespread rise of superstar firms. This is at odds with the simplifying assumption of a continuum of firms, predominant in International Trade. In this paper, we assess its consequences by identifying the magnitude and direction in which gains of trade depart from monopolistic competition once we account for leading firms. With this goal, we extend the Melitz model by incorporating a revenue threshold such that truly negligible firms are modeled as in Melitz, while the largest ones are treated as non-negligible firms that earn positive profits. Firm-level data for several countries show that accounting for leaders entails greater gains of trade in all cases, with differences of up to 20&#37;. The outcome is explained by an additional benefit of reallocating resources towards more productive firms, not captured by the Melitz model: increases in aggregate income through positive effects on profits.  </p></details></div><br></p>
+<li><p><a href="/research/assets/articles/ALFARO-trade_with_leaders.pdf">Assessing Gains of Trade in Monopolistic Competition Under Presence of Industry Leaders</a> &#40;2021&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     A recent literature has documented a widespread rise of superstar firms. This is at odds with the simplifying assumption of a continuum of firms, predominant in International Trade. In this paper, we assess its consequences by identifying the magnitude and direction in which gains of trade depart from monopolistic competition once we account for leading firms. With this goal, we extend the Melitz model by incorporating a revenue threshold such that truly negligible firms are modeled as in Melitz, while the largest ones are treated as non-negligible firms that earn positive profits. Firm-level data for several countries show that accounting for leaders entails greater gains of trade in all cases, with differences of up to 20&#37;. The outcome is explained by an additional benefit of reallocating resources towards more productive firms, not captured by the Melitz model: increases in aggregate income through positive effects on profits.  </p></details></div></p>
 </li>
 </ul>
 <ul>
-<li><p><a href="/research/assets/articles/ALFARO-fdi.pdf">Attracting Multinationals: Additional Costs from Firm Selection</a> &#40;2021&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     We consider a country comprising monopolistic exporters, and a government seeking to boost their efficiency. With this goal, the government provides a multinational with incentives to relocate production in the country, which benefits exporters through productivity spillovers. Our setting highlights the additional difficulties to attract multinationals when the most efficient exporters benefit relatively more from spillovers. Specifically, this makes the policy more effective in enhancing aggregate productivity, by reallocating market share towards more productive firms. However, it simultaneously makes attracting multinationals harder, due to more pronounced increases in competition in the exporting market. Intuitively, the result underscores that multinationals could strategically avoid relocating production in a country if this potentially creates a pool of highly efficient competitors. Thus, those countries that have a subset of firms with outstanding capabilities and hence could potentially benefit more from this policy, are also the ones that could face additional hurdles to implement it.  </p></details></div><br></p>
+<li><p><a href="/research/assets/articles/ALFARO-fdi.pdf">Attracting Multinationals: Additional Costs from Firm Selection</a> &#40;2021&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     We consider a country comprising monopolistic exporters, and a government seeking to boost their efficiency. With this goal, the government provides a multinational with incentives to relocate production in the country, which benefits exporters through productivity spillovers. Our setting highlights the additional difficulties to attract multinationals when the most efficient exporters benefit relatively more from spillovers. Specifically, this makes the policy more effective in enhancing aggregate productivity, by reallocating market share towards more productive firms. However, it simultaneously makes attracting multinationals harder, due to more pronounced increases in competition in the exporting market. Intuitively, the result underscores that multinationals could strategically avoid relocating production in a country if this potentially creates a pool of highly efficient competitors. Thus, those countries that have a subset of firms with outstanding capabilities and hence could potentially benefit more from this policy, are also the ones that could face additional hurdles to implement it.  </p></details></div></p>
 </li>
 </ul>
 <ul>
-<li><p><a href="/research/assets/articles/ALFARO-onCournot.pdf">On Strategic Investments by Leader Firms under Endogenous Entry and Quantity Competition</a> &#40;2020&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     We consider a model where leader firms strategically use demand-enhancing investments to gain a better market position. Our setup is characterized by multiple heterogeneous leaders, free entry of followers, and quantity competition. Moreover, unlike previous studies under endogenous entry, we suppose that investments directly affect rival firms&#39; profits. This formalizes that, all else equal, competition is tougher when goods are more appealing. By comparing the solutions of a simultaneous-moves and sequential-moves game, we show that each leader varies its investment to restrict entry of followers and increase its profit. Nonetheless, the rest of the outcomes are indeterminate. Due to this, we state conditions in terms of model primitives to ensure that leaders limit entry by investing more, and whether this increases or decreases each leader&#39;s revenue, quantity, and price. We conclude by applying our results to the case of a quality-augmented inverse CES demand.  </p></details></div><br></p>
+<li><p><a href="/research/assets/articles/ALFARO-onCournot.pdf">On Strategic Investments by Leader Firms under Endogenous Entry and Quantity Competition</a> &#40;2020&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     We consider a model where leader firms strategically use demand-enhancing investments to gain a better market position. Our setup is characterized by multiple heterogeneous leaders, free entry of followers, and quantity competition. Moreover, unlike previous studies under endogenous entry, we suppose that investments directly affect rival firms&#39; profits. This formalizes that, all else equal, competition is tougher when goods are more appealing. By comparing the solutions of a simultaneous-moves and sequential-moves game, we show that each leader varies its investment to restrict entry of followers and increase its profit. Nonetheless, the rest of the outcomes are indeterminate. Due to this, we state conditions in terms of model primitives to ensure that leaders limit entry by investing more, and whether this increases or decreases each leader&#39;s revenue, quantity, and price. We conclude by applying our results to the case of a quality-augmented inverse CES demand.  </p></details></div></p>
 </li>
 </ul>
 <ul>
-<li><p><a href="/research/assets/articles/ALFARO-market.pdf">Market Structures in Small Open Economies: Evidence from Denmark</a> &#40;2020&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     This paper provides some stylized facts about market structure in Denmark, a country exhibiting high rates of exports and imports as is common in small developed economies. Utilizing disaggregated data at the firm-product level for manufacturing industries, we highlight the widespread presence of industries that are neither purely oligopolistic or monopolistically competitive; rather, they contain a few domestic leaders with numerous firms having insignificant domestic market shares. We also document that, relative to the latter type of firms, leaders have greater labor productivity, are more capital intensive, and pay higher wages; additionally, they are more likely to export and import, although they exhibit a greater domestic intensity relative to exporters with negligible domestic market shares. Finally, through a model of leaders and followers, we investigate how leaders can benefit from acting strategically against small firms and quantify its potential impact on industry outcomes through a numerical exercise  </p></details></div><br></p>
+<li><p><a href="/research/assets/articles/ALFARO-market.pdf">Market Structures in Small Open Economies: Evidence from Denmark</a> &#40;2020&#41; <div class="papersDetails"><details closed><summary>Abstract  </summary>  <p>     This paper provides some stylized facts about market structure in Denmark, a country exhibiting high rates of exports and imports as is common in small developed economies. Utilizing disaggregated data at the firm-product level for manufacturing industries, we highlight the widespread presence of industries that are neither purely oligopolistic or monopolistically competitive; rather, they contain a few domestic leaders with numerous firms having insignificant domestic market shares. We also document that, relative to the latter type of firms, leaders have greater labor productivity, are more capital intensive, and pay higher wages; additionally, they are more likely to export and import, although they exhibit a greater domestic intensity relative to exporters with negligible domestic market shares. Finally, through a model of leaders and followers, we investigate how leaders can benefit from acting strategically against small firms and quantify its potential impact on industry outcomes through a numerical exercise  </p></details></div></p>
 </li>
 </ul></div>
  </div>
@@ -1978,3 +1903,67 @@ window.onkeydown = function(event) {
     })();
     </script>
 
+
+
+<style>
+
+
+@media (max-width: 850px), (max-height: 600px)  {
+     .franklin-content,.jumbotron, .left_bar{
+        font-size:80% ;}
+
+        h1 {font-size: 180%; padding-top:1.5em;padding-bottom:1.5em;}
+  
+  .jumbotron{padding-top: 0; margin-top:0; padding-bottom:4em;  
+    padding-left: 100px !important;
+    padding-right: 3% !important;} 
+
+  h2, .lead {font-size: 110%;padding-top: 0em;}
+
+     .bar_top, nav, .copy-button, .left_bar .personal_website, .py-1 .container .center-text, .left_subtitle{
+      visibility:hidden; width:0 !important; height:0 !important}  
+
+      /* for fixing overflowing code */
+      .col-lg-.mx-auto{     
+        /* white-space: pre-wrap;  */
+        overflow: auto !important;
+         }   
+          
+      .index_container{
+        font-size:100%;
+        padding-left:1%;
+        padding-right:1%;        
+      }
+
+      .itemNoSpace ul, section {
+        padding:1% !important;
+      }
+      
+      
+        .franklin-content{
+         padding-left: 0 !important;}
+     
+
+              
+
+
+     .left_bar{      
+      position:absolute;
+      top: 0 ;
+      left: 0 ;
+      height:auto;
+      background-image: none;
+      width:100px !important;
+      padding:0;
+      }
+     
+                 
+      .left_bar ul, .left_bar ul li, .left_bar ul li a { padding:0 !important; height:3.2em; font-size:96%}
+      
+      .left_bar img, .left_bar ul li a img{
+      width:0% !important; height:0% !important; visibility: hidden;}  
+}
+
+
+
+</style>
