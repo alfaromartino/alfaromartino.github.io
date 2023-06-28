@@ -5,6 +5,5 @@ https://alfaromartino.github.io/research/
 https://alfaromartino.github.io/datasets/
 https://alfaromartino.github.io/datasets/PAGES/01_nace4europe/
 https://alfaromartino.github.io/blog/
-https://alfaromartino.github.io/blog/PAGES/
 https://alfaromartino.github.io/blog/list_posts/
 https://alfaromartino.github.io/books/
